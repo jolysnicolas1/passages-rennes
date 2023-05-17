@@ -53,6 +53,7 @@ export default function Detailled() {
                 src={feature.src}
                 className="rounded-md"
                 object-fit="cover"
+                alt="image"
             />
           </div>
         ))}
