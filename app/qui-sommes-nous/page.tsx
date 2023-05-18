@@ -3,7 +3,7 @@ export default function Home() {
     <main className='m-5 mb-auto'>
       <div className='mb-12'>
         <div className="mx-auto max-w-2xl">
-            <h1 className="py-3 text-3xl font-bold tracking-tight text-lime-950 sm:text-4xl pt-12">
+            <h1 className="py-3 text-3xl font-bold tracking-tight text-lime-950 sm:text-4xl">
               Notre cuisine
             </h1>
             <p className="mt-4 text-lg text-lime-950">
@@ -12,7 +12,7 @@ export default function Home() {
             </p>
         </div>
         <div className="mx-auto max-w-2xl">
-            <h1 className="py-3 text-3xl font-bold tracking-tight text-lime-950 sm:text-4xl pt-12">
+            <h1 className="py-3 text-3xl font-bold tracking-tight text-lime-950 sm:text-4xl">
             Notre parcours, nos valeurs
             </h1>
             <p className="mt-4 text-lg text-lime-950">
