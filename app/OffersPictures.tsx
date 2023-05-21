@@ -3,11 +3,14 @@ import offre1 from "../public/offres1.webp"
 import offre2 from "/public/offres2.webp"
 import offre3 from "/public/offres3.webp"
 import offre4 from "/public/offres4.webp"
+import { motion, useScroll, useTransform } from "framer-motion"
 
 export default function OffersPictures() {
+    let { scrollYProgress } =useScroll();
+    let y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
     return (
-        <div className="bg-test mx-auto grid max-w-2xl grid-cols-2 gap-4">
-          <div className="mb-20 grid items-center justify-items-end gap-4">
+        <div className="mx-auto grid max-w-2xl grid-cols-2 gap-4">
+          <motion.div style={{y}} className="mb-20 grid items-center justify-items-end gap-4">
             <Image
               width={290}
               height={290}
@@ -22,7 +25,7 @@ export default function OffersPictures() {
               alt="Side of walnut card tray with card groove and recessed card area."
               className="rounded-lg bg-gray-100"
             />
-          </div>
+          </motion.div>
           <div className="grid items-center justify-items-start">
             <Image
                 width={290}

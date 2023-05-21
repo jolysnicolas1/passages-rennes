@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import offre1 from "../public/offres1.webp"
 import offre2 from "/public/offres2.webp"
@@ -5,7 +7,7 @@ import offre3 from "/public/offres3.webp"
 import offre4 from "/public/offres4.webp"
 import OffersDescriptions from "./OffersDescriptions"
 import OffersPictures from "./OffersPictures"
-import 
+import { motion, useScroll, useTransform } from "framer-motion"
 
 const features = [
   { name: "Cocktails et réceptions ", 
@@ -25,10 +27,14 @@ const features = [
 ]
 
 export default function Offers() {
+  let { scrollYProgress } =useScroll();
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   return (
-      <motion.div className="mx-auto grid h-fit max-w-2xl grid-cols-1 items-center gap-x-12 gap-y-16 px-4 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-        <OffersPictures></OffersPictures>
+      <div className="mx-auto grid h-fit max-w-2xl grid-cols-1 items-center gap-x-12 gap-y-16 px-4 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8 lg:mb-36">
+        <motion.div style={{y}} className="">
+          <OffersPictures></OffersPictures>
+        </motion.div>
         <OffersDescriptions></OffersDescriptions>
-      </motion.div>
+      </div>
   )
 }
