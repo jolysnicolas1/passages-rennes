@@ -1,5 +1,3 @@
-
-
 export default function OffersDescriptions() {
 
 const features = [
@@ -26,12 +24,12 @@ const features = [
         flex flex-col justify-between 
         ">
           
-            <h2 className="">
+            <h2 className="text-4xl">
                 Nos offres
             </h2>
             <dl className="">
                 {features.map((feature) => (
-                <div key={feature.name} className="border-t border-gray-200 pt-4">
+                <div key={feature.name} className="border-t border-gray-200 pt-4 my-5 italic font-medium text-xl">
                     <dt className="">{feature.name}</dt>
                 </div>
             ))}
