@@ -1,5 +1,6 @@
 import Image from "next/image"
 import logo from '/public/logo_passages_vert.png'
+import ButtonContact from "./ButtonContact"
 
 
 export default function HeroContent() {
@@ -22,14 +23,7 @@ export default function HeroContent() {
             <p className="mt-6 text-lg leading-8 text-gray-600">
             Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées . Contactez-nous pour déterminer ensemble l’offre qui vous conviendra le mieux !
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="/contact"
-                className="rounded-md bg-red-600 px-4 py-3 text-md font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
-              >
-                Nous contacter
-              </a>
-            </div>
+            <ButtonContact></ButtonContact>
           </div>
         </div>
       </div>

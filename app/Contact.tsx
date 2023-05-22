@@ -13,7 +13,7 @@ export default function Contact() {
         <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
           <div className="mx-auto max-w-2xl lg:mx-0">
             {/* <img className="h-32" src="/logo_passages_vert.png" alt="Your Company" /> */}
-            <h1 className="mt-24 text-4xl font-bold tracking-tight text-lime-950 sm:mt-10 sm:text-6xl">
+            <h1 className="mt-24 text-4xl font-bold tracking-tight  sm:mt-10 sm:text-6xl">
               Nous contacter
             </h1>
             <div className="mt-8 flex space-x-3">
@@ -35,8 +35,8 @@ export default function Contact() {
               </div>
             </div>
             <Link href="https://instagram.com/passages.bzh?igshid=ZDdkNTZiNTM=">
-              <div className="mt-8 flex space-x-3 text-lime-950">
-                <div className="relative py-1 text-xl font-semibold text-red-950">
+              <div className="mt-8 flex space-x-3">
+                <div className="relative py-1 text-xl font-semibold">
                   <FaInstagram />
                 </div>
                 <div className="relative text-xl font-normal text-red-950  duration-300 hover:text-lime-950">

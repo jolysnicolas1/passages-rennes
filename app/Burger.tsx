@@ -50,7 +50,7 @@ const Burger = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-lime-950 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-50"
                   >
                     {item.name}
                   </a>
@@ -59,7 +59,7 @@ const Burger = () => {
               <div className="py-6">
                 <a
                   href="/contact"
-                  className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-lime-950 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 hover:bg-gray-50"
                 >
                   Contact
                 </a>

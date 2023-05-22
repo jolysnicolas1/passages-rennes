@@ -28,9 +28,9 @@ const features = [
 
 export default function Offers() {
   let { scrollYProgress } =useScroll();
-  let y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
   return (
-      <div className="mx-auto grid h-fit max-w-2xl grid-cols-1 items-center gap-x-12 gap-y-16 px-4 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8 lg:mb-36">
+      <div className="mx-auto grid h-fit max-w-2xl grid-cols-1 items-center gap-x-12 gap-y-16 px-4 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8 lg:mb-36 space-y-24">
         <motion.div style={{y}} className="">
           <OffersPictures></OffersPictures>
         </motion.div>

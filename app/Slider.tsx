@@ -27,7 +27,7 @@ import portfolio20 from "/public/portfolio20.jpg"
 
   export default function Slider() {
     let { scrollYProgress } =useScroll();
-    let y = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"]);
+    let y = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
 
     return (
         <div className="relative max-w-full w-full xl:max-w-7xl h-96">

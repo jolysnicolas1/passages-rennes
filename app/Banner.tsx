@@ -1,23 +1,16 @@
 "use client"
-
+import ButtonContact from "./ButtonContact"
 
 export default function Banner() {
     return (
-      <div className="py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:justify-between lg:px-8">
+      <div className="pt-44 pb-12 md:py-32 ">
+        <div className="mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:justify-between lg:px-8 space-x-12">
           <h2 className="text-3xl font-bold tracking-tight text-red-950 sm:text-4xl">
             <p className="">Un devis, une demande, un événement ?</p>
             <p className="">Contactez-nous</p>
           </h2>
           <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
-            <div className="m-10 items-center justify-center gap-x-6">
-              <a
-                href="/contact"
-                className="rounded-md bg-red-600 px-4 py-3 text-lg font-semibold shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
-              >
-                Nous contacter
-              </a>
-            </div>
+            <ButtonContact></ButtonContact>
           </div>
         </div>
         {/* <div className="mx-auto max-w-7xl px-6">

@@ -7,7 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 
 export default function OffersPictures() {
     let { scrollYProgress } =useScroll();
-    let y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+    let y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
     return (
         <div className="mx-auto grid max-w-2xl grid-cols-2 gap-4">
           <motion.div style={{y}} className="mb-20 grid items-center justify-items-end gap-4">

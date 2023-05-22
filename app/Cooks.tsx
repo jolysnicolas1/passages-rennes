@@ -28,8 +28,8 @@ import { motion, useScroll, useTransform } from "framer-motion"
           </div>
         </div>
 
-        <div className="bg-test inset-0">
-          <Image className="object-contain object-center" src={cooks} alt="Picture of the author" width={500} height={900}/>
+        <div className="bg-black inset-0 flex justify-center">
+          <Image className="object-contain" src={cooks} alt="Picture of the author" width={500} height={900}/>
         </div>
       </motion.div>
     )
