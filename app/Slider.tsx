@@ -7,55 +7,106 @@ import portfolio01 from "/public/portfolio01.jpg"
 import portfolio02 from "/public/portfolio02.jpg"
 import portfolio03 from "/public/portfolio03.jpg"
 import portfolio04 from "/public/portfolio04.jpg"
+import portfolio05 from "/public/portfolio05.jpg"
+import portfolio06 from "/public/portfolio06.jpg"
+import portfolio07 from "/public/portfolio07.jpg"
+import portfolio08 from "/public/portfolio08.jpg"
+import portfolio09 from "/public/portfolio09.jpg"
+import portfolio10 from "/public/portfolio10.jpg"
+import portfolio11 from "/public/portfolio11.jpg"
+import portfolio12 from "/public/portfolio12.jpg"
+import portfolio13 from "/public/portfolio13.jpg"
+import portfolio14 from "/public/portfolio14.jpg"
+import portfolio15 from "/public/portfolio15.jpg"
+import portfolio16 from "/public/portfolio16.jpg"
+import portfolio17 from "/public/portfolio17.jpg"
+import portfolio18 from "/public/portfolio18.jpg"
+import portfolio19 from "/public/portfolio19.jpg"
+import portfolio20 from "/public/portfolio20.jpg"
 
 
   export default function Slider() {
     let { scrollYProgress } =useScroll();
-    let y = useTransform(scrollYProgress, [0, 1], ["0%", "-15%"]);
-    return (
-        <motion.div style={{y}} className="snap-mandatory snap-x space-x-24 bg-transparent overflow-x-scroll relative mx-auto max-w-7xl p-6 flex lg:items-center lg:px-8
+    let y = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"]);
 
-        ">
-            {/* <div className="bg-test relative px-6 sm:px-12 lg:px-16 overflow-x-scroll">
-                <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center p-8 space-y-8 shrink-0">
-                    <h2
-                    id="presentation" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                    <span className="block sm:inline">Vos cuistôts</span>
-                    </h2>
-                    <p className="mt-3 text-xl text-white pb-5">Passages, c’est l’histoire de deux amis, passionnés par le goût et animés par des valeur de partage et de gourmandise. Hugo et Pierre, l’un cuisinier, l’autre pâtissier, ont choisi de s’installer à Rennes afin de mettre leur expérience et leur complicité au service de vos événements.
-                    </p>
+    return (
+        <div className="relative max-w-full w-full xl:max-w-7xl h-96">
+            <motion.div style={{y}} className="
+            absolute 
+            m-12 
+            h-full
+            drop-shadow-2xl
+            snap-mandatory snap-x 
+            bg-transparent 
+            overflow-x-scroll 
+            relative 
+            mx-auto 
+            max-w-full 
+            xl:max-w-7xl 
+            flex 
+            lg:items-center 
+            lg:px-8">
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio02} alt="" width={300} height={900} />    
                 </div>
-            </div> */}
-            <div className="snap-center snap-always w-96 h-96 bg-blue-500 shrink-0">
-                <Image className="object-contain object-center" src={cooks} alt="Picture of the author" width={500} height={900}/>
-            </div>
-            <div className="snap-center snap-always h-96 bg-red-500 shrink-0">
-                 <Image className="object-cover h-full" src={portfolio01} alt="Picture of the author" width={500} height={900}/>
-            </div>
-            <div className="snap-center snap-always w-fit h-96 bg-blue-500 shrink-0">
-                <Image className="object-contain object-center max-h-full" src={portfolio02} alt="Picture of the author" width={500} height={900}/>
-            </div>
-            <div className="snap-center snap-always w-96 h-96 bg-red-500 shrink-0">
-                <Image className="object-contain object-center" src={portfolio03} alt="Picture of the author" width={500} height={900}/>
-            </div>
-            <div className="snap-center snap-always w-96 h-96 bg-blue-500 shrink-0">
-                <Image className="object-contain object-center" src={portfolio04} alt="Picture of the author" width={500} height={900}/>
-            </div>
-            <div className="snap-center snap-always w-96 h-96 bg-blue-500 shrink-0">
-                <Image className="object-contain object-center" src={cooks} alt="Picture of the author" width={500} height={900}/>
-            </div>
-            <div className="snap-center snap-always h-96 bg-red-500 shrink-0">
-                 <Image className="object-cover h-full" src={portfolio01} alt="Picture of the author" width={500} height={900}/>
-            </div>
-            <div className="snap-center snap-always w-fit h-96 bg-blue-500 shrink-0">
-                <Image className="object-contain object-center max-h-full" src={portfolio02} alt="Picture of the author" width={500} height={900}/>
-            </div>
-            <div className="snap-center snap-always w-96 h-96 bg-red-500 shrink-0">
-                <Image className="object-contain object-center" src={portfolio03} alt="Picture of the author" width={500} height={900}/>
-            </div>
-            <div className="snap-center snap-always w-96 h-96 bg-blue-500 shrink-0">
-                <Image className="object-contain object-center" src={portfolio04} alt="Picture of the author" width={500} height={900}/>
-            </div>
-        </motion.div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio01} alt="" width={600} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio03} alt="" width={300} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio04} alt="" width={300} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio05} alt="" width={300} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio06} alt="" width={300} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio07} alt="" width={300} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio08} alt="" width={600} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio09} alt="" width={600} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio10} alt="" width={300} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio11} alt="" width={300} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio12} alt="" width={400} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio13} alt="" width={400} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio14} alt="" width={400} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio15} alt="" width={600} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio16} alt="" width={600} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio17} alt="" width={400} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio18} alt="" width={600} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio19} alt="" width={600} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio20} alt="" width={600} height={900} />    
+                </div>
+            </motion.div>
+        </div>
     )
   }
