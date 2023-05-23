@@ -1,6 +1,6 @@
 "use client"
 
-import cooks from "/public/cooks.jpeg"
+import cooks from "/public/cooks.jpg"
 import Image from "next/image"
 import { motion, useScroll, useTransform } from "framer-motion"
 import portfolio01 from "/public/portfolio01.jpg"

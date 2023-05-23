@@ -2,7 +2,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
-import contactPicture from '../public/contact.webp'
+import contactPicture from '../public/contact.jpg'
 
 
 
