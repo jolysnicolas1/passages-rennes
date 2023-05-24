@@ -9,11 +9,11 @@ import { motion, useScroll, useTransform } from "framer-motion"
     let { scrollYProgress } =useScroll();
     let y = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
     return (
-      <motion.div style={{y}} className="border-2 border-black relative mx-auto max-w-7xl p-6 lg:flex lg:items-center lg:justify-between lg:px-8 drop-shadow-2xl
+      <motion.div style={{y}} className="border-2 border-red-300 relative mx-auto max-w-7xl p-6 lg:flex lg:items-center lg:justify-between lg:px-8 drop-shadow-2xl
         before:inset-x-0
         before:inset-y-0
         before:bg-black
-        before:bg-opacity-70
+        before:bg-opacity-30
         before:absolute
         before:drop-shadow-2xl
       ">
