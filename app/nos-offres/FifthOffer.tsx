@@ -21,16 +21,14 @@ export default function FifthOffer() {
             </div> */}
             <FifthOfferPic></FifthOfferPic>
             <div className="w-2/4 m-5 flex align-center relative">
-                <div className="flex flex-col italic text-xl font-thin">
+                <div className="flex flex-col italic text-2xl font-light text-gray-600">
                     <motion.div style={{y}} className="p-12 absolute flex flex-col space-y-12">
-                        <p>texte fifth offer</p>
-                        <p>texte plus long</p>
-                        <p>texte</p>
+                        <p>Le végétal à l'honneur</p>
+                        <p>Offre végétarienne, végétalienne</p>
                     </motion.div>
                     <motion.div style={{y}} className="opacity-0 p-12 flex flex-col space-y-12">
-                        <p>texte</p>
-                        <p>texte plus long</p>
-                        <p>texte</p>
+                        <p>Le végétal à l'honnuer</p>
+                        <p>Offre végétarienne, végétalienne</p>
                     </motion.div>
                 </div>
             </div>

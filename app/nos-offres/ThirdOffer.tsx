@@ -10,16 +10,16 @@ export default function ThirdOffer() {
         <div className="flex italic">
             <ThirdOfferPic></ThirdOfferPic>
             <div className="w-2/4 m-5 flex align-center relative">
-                <div className="flex flex-col italic text-xl font-thin">
+                <div className="flex flex-col italic text-2xl font-light text-gray-600">
                     <motion.div style={{y}} className="p-12 absolute flex flex-col space-y-12">
-                        <p>texte third offer</p>
-                        <p>texte plus long</p>
-                        <p>texte</p>
+                        <p>Séminaire</p>
+                        <p>Fête d'anniversaire</p>
+                        <p>Catering</p>
                     </motion.div>
                     <motion.div style={{y}} className="opacity-0 p-12 flex flex-col space-y-12">
-                        <p>texte</p>
-                        <p>texte plus long</p>
-                        <p>texte</p>
+                        <p>Séminaire</p>
+                        <p>Fête d'anniversaire</p>
+                        <p>Catering</p>
                     </motion.div>
                 </div>
             </div>
