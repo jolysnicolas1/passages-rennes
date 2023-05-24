@@ -44,14 +44,14 @@ export default function Detailled() {
 
       <dl className="space-y-4 mb-12">
         {features.map((feature) => (
-          <div key={feature.name} className="border rounded-lg p-5 m-5 border-gray-200 pt-4 space-y-4 drop-shadow-md relative">
+          <div key={feature.name} className="border  p-5 m-5 border-gray-200 pt-4 space-y-4 drop-shadow-md relative">
             <dt className="font-medium text-lime-950 text-xl italic">{feature.name}</dt>
             <dd className="text-md text-gray-500">{feature.description}</dd>
             <Image
                 width={900}
                 height={300}
                 src={feature.src}
-                className="rounded-md"
+                className=""
                 object-fit="cover"
                 alt="image"
             />

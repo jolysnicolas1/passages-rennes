@@ -8,17 +8,6 @@ export default function FifthOffer() {
     let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]); 
     return (
         <div className="flex italic">
-            {/* <div className="rounded-xl w-2/4 drop-shadow-md bg-white m-5 p-5 flex flex-col">
-                <p className="py-5 text-medium italic">Mariages et grands évènements</p>
-                <Image
-                    src={test}
-                    width={408}
-                    height={601}
-                    className=""
-                    alt="test picture"
-                    />
-                <p className="py-5">De bouchées délicates, des boissons innovantes, un service impeccable… Offrez-vous une soirée réussie.</p>
-            </div> */}
             <FifthOfferPic></FifthOfferPic>
             <div className="w-2/4 m-5 flex align-center relative">
                 <div className="flex flex-col italic text-2xl font-light text-gray-600">

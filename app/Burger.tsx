@@ -19,7 +19,7 @@ const Burger = () => {
     <div className="flex md:hidden">
       <button
         type="button"
-        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+        className="-m-2.5 inline-flex items-center justify-center  p-2.5 text-gray-700"
         onClick={() => setMobileMenuOpen(true)}
       >
         <span className="sr-only">Open main menu</span>
@@ -41,7 +41,7 @@ const Burger = () => {
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5  p-2.5 text-gray-700"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -55,7 +55,7 @@ const Burger = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-50"
+                    className="-mx-3 block  py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-50"
                   >
                     {item.name}
                   </a>
@@ -64,7 +64,7 @@ const Burger = () => {
               <div className="py-6">
                 <a
                   href="/contact"
-                  className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 hover:bg-gray-50"
+                  className="-mx-3 block  py-2.5 px-3 text-base font-semibold leading-7 hover:bg-gray-50"
                 >
                   Contact
                 </a>

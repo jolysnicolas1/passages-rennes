@@ -6,7 +6,7 @@ export default function ThirdOfferPic() {
     let { scrollYProgress } =useScroll();
     let y = useTransform(scrollYProgress, [0, 1], ["20%", "-50%"]); 
     return (
-        <motion.div style={{y}}  className="rounded-xl w-2/4 drop-shadow-md bg-white m-5 flex flex-col">
+        <motion.div style={{y}}  className=" w-2/4 drop-shadow-md bg-white m-5 flex flex-col">
             <p className="p-5 text-medium italic">Le coin sucré</p>
             <Image
                 src={test}

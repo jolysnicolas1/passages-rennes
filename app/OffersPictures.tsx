@@ -16,14 +16,14 @@ export default function OffersPictures() {
               height={290}
               src={offre1}
               alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-              className="self-end rounded-lg bg-gray-100"
+              className="self-end  bg-gray-100"
             />
             <Image
               width={290}
               height={290}
               src={offre3}
               alt="Side of walnut card tray with card groove and recessed card area."
-              className="rounded-lg bg-gray-100"
+              className=" bg-gray-100"
             />
           </motion.div>
           <div className="grid items-center justify-items-start">
@@ -32,14 +32,14 @@ export default function OffersPictures() {
                 height={290}
                 src={offre2}
                 alt="Top down view of walnut card tray with embedded magnets and card groove."
-                className="self-end rounded-lg bg-gray-100"
+                className="self-end  bg-gray-100"
               />
               <Image
                 width={290}
                 height={290}
                 src={offre4}
                 alt="Walnut card tray filled with cards and card angled in dedicated groove."
-                className="rounded-lg bg-gray-100"
+                className=" bg-gray-100"
               />
           </div>
         </div>
