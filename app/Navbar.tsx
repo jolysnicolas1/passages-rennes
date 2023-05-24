@@ -1,4 +1,6 @@
 import Burger from "./Burger"
+import logo from '/public/logo_passages_vert.png'
+import Image from "next/image"
 
 const Navbar = () => {
   const navigation = [
@@ -10,18 +12,20 @@ const Navbar = () => {
   return (
     <header className="sticky inset-x-0 top-0 z-50 bg-white lg:bg-transparent">
       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
+        <div className="flex md:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Passages</span>
-            <img
-              className="h-8 w-auto"
-              src="logo_passages_vert.png"
-              alt="logo passages"
-            />
+            <Image
+                className="h-8 w-auto"
+                src={logo}
+                width={120}
+                height={120}
+                alt=""
+              />
           </a>
         </div>
         <Burger />
-        <div className="hidden rounded-full bg-white px-5 py-3 shadow lg:flex lg:gap-x-12">
+        <div className="hidden rounded-full bg-white px-5 py-3 shadow md:flex md:gap-x-12">
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -32,7 +36,7 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden md:flex md:flex-1 md:justify-end">
           <a href="/contact" className="text-sm font-semibold leading-6 text-lime-950">
             Contact <span aria-hidden="true">&rarr;</span>
           </a>

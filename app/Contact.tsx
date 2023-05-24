@@ -12,7 +12,6 @@ export default function Contact() {
       <div className="mx-auto mb-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
         <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            {/* <img className="h-32" src="/logo_passages_vert.png" alt="Your Company" /> */}
             <h1 className="mt-24 text-4xl font-bold tracking-tight  sm:mt-10 sm:text-6xl">
               Nous contacter
             </h1>
