@@ -47,10 +47,22 @@ import portfolio20 from "/public/portfolio20.jpg"
             lg:items-center 
             lg:px-8">
                 <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio17} alt="" width={400} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio20} alt="" width={600} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio18} alt="" width={600} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
+                    <Image className="object-contain h-full" src={portfolio19} alt="" width={600} height={900} />    
+                </div>
+                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
                     <Image className="object-contain h-full" src={portfolio02} alt="" width={300} height={900} />    
                 </div>
                 <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
-                    <Image className="object-contain h-full" src={portfolio01} alt="" width={600} height={900} />    
+                    <Image className="object-contain h-full" src={portfolio07} alt="" width={300} height={900} />    
                 </div>
                 <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
                     <Image className="object-contain h-full" src={portfolio03} alt="" width={300} height={900} />    
@@ -63,9 +75,6 @@ import portfolio20 from "/public/portfolio20.jpg"
                 </div>
                 <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
                     <Image className="object-contain h-full" src={portfolio06} alt="" width={300} height={900} />    
-                </div>
-                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
-                    <Image className="object-contain h-full" src={portfolio07} alt="" width={300} height={900} />    
                 </div>
                 <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
                     <Image className="object-contain h-full" src={portfolio08} alt="" width={600} height={900} />    
@@ -83,10 +92,7 @@ import portfolio20 from "/public/portfolio20.jpg"
                     <Image className="object-contain h-full" src={portfolio12} alt="" width={400} height={900} />    
                 </div>
                 <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
-                    <Image className="object-contain h-full" src={portfolio13} alt="" width={400} height={900} />    
-                </div>
-                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
-                    <Image className="object-contain h-full" src={portfolio14} alt="" width={400} height={900} />    
+                    <Image className="object-contain h-full" src={portfolio01} alt="" width={600} height={900} />    
                 </div>
                 <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
                     <Image className="object-contain h-full" src={portfolio15} alt="" width={600} height={900} />    
@@ -95,17 +101,12 @@ import portfolio20 from "/public/portfolio20.jpg"
                     <Image className="object-contain h-full" src={portfolio16} alt="" width={600} height={900} />    
                 </div>
                 <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
-                    <Image className="object-contain h-full" src={portfolio17} alt="" width={400} height={900} />    
+                    <Image className="object-contain h-full" src={portfolio13} alt="" width={400} height={900} />    
                 </div>
                 <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
-                    <Image className="object-contain h-full" src={portfolio18} alt="" width={600} height={900} />    
+                    <Image className="object-contain h-full" src={portfolio14} alt="" width={400} height={900} />    
                 </div>
-                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
-                    <Image className="object-contain h-full" src={portfolio19} alt="" width={600} height={900} />    
-                </div>
-                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
-                    <Image className="object-contain h-full" src={portfolio20} alt="" width={600} height={900} />    
-                </div>
+
             </motion.div>
         </div>
     )

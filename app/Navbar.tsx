@@ -30,14 +30,14 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-lime-950"
+              className="text-sm font-semibold leading-6 "
             >
               {item.name}
             </a>
           ))}
         </div>
         <div className="hidden md:flex md:flex-1 md:justify-end">
-          <a href="/contact" className="text-sm font-semibold leading-6 text-lime-950">
+          <a href="/contact" className="text-sm font-semibold leading-6 ">
             Contact <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
