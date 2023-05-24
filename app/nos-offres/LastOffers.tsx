@@ -4,6 +4,9 @@ import Image from "next/image"
 import test from "/public/offers-catering.jpg"
 import FirstOffer from "./FirstOffer"
 import SecondOffer from "./SecondOffer"
+import ThirdOffer from "./ThirdOffer"
+import FourthOffer from "./FourthOffer"
+import FifthOffer from "./FifthOffer"
 
 
 export default function LastOffers() {
@@ -11,9 +14,9 @@ export default function LastOffers() {
         <div className="flex flex-col">
             <FirstOffer></FirstOffer>
             <SecondOffer></SecondOffer> 
-            <FirstOffer></FirstOffer>
-            <SecondOffer></SecondOffer> 
-            <FirstOffer></FirstOffer>
+            <ThirdOffer></ThirdOffer>
+            <FourthOffer></FourthOffer>
+            <FifthOffer></FifthOffer>
         </div>
     )
 }

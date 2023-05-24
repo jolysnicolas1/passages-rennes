@@ -1,13 +1,13 @@
 import Image from "next/image"
-import test from "/public/offers-diner.jpg"
+import test from "/public/offers-service.jpg"
 import { motion, useScroll, useTransform } from "framer-motion"
 
-export default function SecondOfferPic() {
+export default function FourthOfferPic() {
     let { scrollYProgress } =useScroll();
-    let y = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]); 
+    let y = useTransform(scrollYProgress, [0, 1], ["-40%", "-20%"]); 
     return (
         <motion.div style={{y}}  className="rounded-xl w-2/4 drop-shadow-md bg-white m-5 p-5 flex flex-col">
-            <p className="py-5 text-medium italic">Mariages et grands évènements</p>
+            <p className="py-5 text-medium italic">Fourth offer pic</p>
             <Image
                 src={test}
                 width={408}

@@ -1,5 +1,4 @@
 import DetailledOffers from "../DetailledOffers"
-import FlexOffers from "./FlexOffers"
 import LastOffers from "./LastOffers"
 
 export default function Home() {
