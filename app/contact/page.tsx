@@ -1,11 +1,10 @@
-import Image from 'next/image'
-import Contact from '../Contact'
+import TwContact from '../TwContact'
 
 
 export default function Home() {
   return (
     <main className="">
-        <Contact />
+        <TwContact />
     </main>
   )
 }
