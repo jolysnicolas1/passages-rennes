@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 
 export default function HeroBgOne() {
   let { scrollYProgress } =useScroll();
-  let y = useTransform(scrollYProgress, [0, 1], ["0%", "280%"]);
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "340%"]);
     return (
     <motion.div style={{y}}
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
