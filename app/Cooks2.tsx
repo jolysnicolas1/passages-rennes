@@ -7,7 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 
 export default function Cooks2() {
     let { scrollYProgress } =useScroll();
-    let y = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+    let y = useTransform(scrollYProgress, [0, 1], ["-10%", "30%"]);
     return (
       <div className="bg-transparent relative">
         <motion.div style={{y}} className="overflow-hidden mx-auto max-w-7xl px-6 lg:flex lg:px-8 absolute">
@@ -20,29 +20,29 @@ export default function Cooks2() {
               <p className="mt-6 text-base leading-7 text-gray-600">
               Hugo et Pierre, l’un cuisinier, l’autre pâtissier, ont choisi de s’installer à Rennes afin de mettre leur expérience et leur complicité au service de vos événements.
               </p>
-              <div className="mt-10 flex">
+              {/* <div className="mt-10 flex">
                 <a
                   href="#"
-                  className=" bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className=" bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
                 >
                   Contactez-nous <span aria-hidden="true">&rarr;</span>
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
               <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
                 <Image className="aspect-[7/5] w-[37rem] max-w-none  bg-gray-50 object-cover" src={cooks} alt="Picture of the author" width={500} height={900}/>
               </div>
               <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
-                <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
+                {/* <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
                     <Image className="aspect-[4/3] w-[24rem] max-w-none flex-none  bg-gray-50 object-cover" src={cooks} alt="Picture of the author" width={500} height={900}/>
-                </div>
-                <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
+                </div> */}
+                {/* <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
                     <Image className="aspect-[7/5] w-[37rem] max-w-none flex-none  bg-gray-50 object-cover" src={cooks} alt="Picture of the author" width={500} height={900}/>
-                </div>
-                <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
+                </div> */}
+                {/* <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
                     <Image className="aspect-[4/3] w-[24rem] max-w-none  bg-gray-50 object-cover" src={cooks} alt="Picture of the author" width={500} height={900}/>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -57,21 +57,21 @@ export default function Cooks2() {
               <p className="mt-6 text-base leading-7 text-gray-600">
               Hugo et Pierre, l’un cuisinier, l’autre pâtissier, ont choisi de s’installer à Rennes afin de mettre leur expérience et leur complicité au service de vos événements.
               </p>
-              <div className="mt-10 flex">
+              {/* <div className="mt-10 flex">
                 <a
-                  href="#"
-                  className=" bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  href="/contact"
+                  className=" bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
                 >
                   Contactez-nous <span aria-hidden="true">&rarr;</span>
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
               <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
                 <Image className="aspect-[7/5] w-[37rem] max-w-none  bg-gray-50 object-cover" src={cooks} alt="Picture of the author" width={500} height={900}/>
               </div>
               <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
-                <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
+                {/* <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
                     <Image className="aspect-[4/3] w-[24rem] max-w-none flex-none  bg-gray-50 object-cover" src={cooks} alt="Picture of the author" width={500} height={900}/>
                 </div>
                 <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
@@ -79,7 +79,7 @@ export default function Cooks2() {
                 </div>
                 <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
                     <Image className="aspect-[4/3] w-[24rem] max-w-none  bg-gray-50 object-cover" src={cooks} alt="Picture of the author" width={500} height={900}/>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
