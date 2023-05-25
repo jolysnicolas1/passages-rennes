@@ -4,6 +4,7 @@ import Offers from './Offers'
 import Cooks2 from './Cooks2'
 import Banner from './Banner'
 import Slider from './Slider'
+import TwTestimonies from './nos-offres/TwTestimonies'
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Cooks2 />
       <Banner />
       <Slider />
+      <TwTestimonies />
     </main>
   )
 }

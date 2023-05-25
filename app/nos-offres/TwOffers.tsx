@@ -6,42 +6,42 @@ const features = [
       name: 'Mariages et grands évènements',
       description:
         'Profitez de moments magiques, et laissez-vous porter.',
-      imageSrc: '/public/offers-mariage.jpg',
+      imageSrc: '/offers-mariage.jpg',
       imageAlt: 'Mariage',
     },
     {
       name: 'Dîners privés',
       description:
         "Mettez-vous à l’aise, et laissez-nous organiser une prestation gastronomique hors du commun dans un cadre familier.",
-      imageSrc: '/public/offers-diner.jpg',
+      imageSrc: '/offers-diner.jpg',
       imageAlt: 'Dîners privés',
     },
     {
       name: 'Le coin sucré',
       description:
         'Offrez-vous un moment de gourmandise avec notre offre de pâtisseries fines, viennoiseries maison et boissons chaudes, à l&apos;heure du goûter ou au petit-déjeuner.',
-      imageSrc: '/public/offers-sucre.jpg',
+      imageSrc: '/offers-sucre.jpg',
       imageAlt: 'Coin sucré',
     },
     {
       name: 'Cocktails et réceptions',
       description:
         'De bouchées délicates, des boissons innovantes, un service impeccable… Offrez-vous une soirée réussie.',
-      imageSrc: '/public/offers-service.jpg',
+      imageSrc: '/offers-service.jpg',
       imageAlt: 'Cocktails et réceptions',
     },
     {
       name: 'Caterings et séminaires',
       description:
         'Caterings et séminaires',
-      imageSrc: '/public/offers-catering.jpg',
+      imageSrc: '/offers-catering.jpg',
       imageAlt: 'Catering et séminaires',
     },
   ]
   
   export default function TwOffers() {
     return (
-      <div className="bg-white">
+      <div className="bg-transparent">
         <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
           <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
             <div className="max-w-3xl">
