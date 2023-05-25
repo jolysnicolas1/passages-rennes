@@ -5,7 +5,7 @@ import Image from "next/image"
 import { motion, useScroll, useTransform } from "framer-motion"
 
 
-export default function Example() {
+export default function Cooks2() {
     let { scrollYProgress } =useScroll();
     let y = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
     return (
