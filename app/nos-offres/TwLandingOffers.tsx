@@ -22,7 +22,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
     {
       name: 'Le coin sucré',
       description:
-        'Offrez-vous un moment de gourmandise avec notre offre de pâtisseries fines, viennoiseries maison et boissons chaudes, à l&apos;heure du goûter ou au petit-déjeuner.',
+        'Offrez-vous un moment de gourmandise avec notre offre de pâtisseries fines, viennoiseries maison et boissons chaudes, à l&lsquo;heure du goûter ou au petit-déjeuner.',
     },
     {
       name: 'Cocktails et réceptions',

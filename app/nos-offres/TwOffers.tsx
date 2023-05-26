@@ -19,7 +19,7 @@ const features = [
     {
       name: 'Le coin sucré',
       description:
-        'Offrez-vous un moment de gourmandise avec notre offre de pâtisseries fines, viennoiseries maison et boissons chaudes, à l&apos;heure du goûter ou au petit-déjeuner.',
+        'Offrez-vous un moment de gourmandise avec notre offre de pâtisseries fines, viennoiseries maison et boissons chaudes, à l&lsquo;heure du goûter ou au petit-déjeuner.',
       imageSrc: '/offers-sucre.jpg',
       imageAlt: 'Coin sucré',
     },
@@ -48,7 +48,7 @@ const features = [
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Nos offres</p>
               <h2 className="font-semibold text-gray-500"><span className="text-lime-950">Passages</span> Gastronomie itinérante et sur-mesure</h2>
               <p className="mt-4 text-gray-500">
-                Pour vos séminaires, fêtes d&apos;anniversaire, mariages, caterings, dîners privés, cocktails ou buffets, nous élaborons un menu sur-mesure, totalement adapté à vos besoins. Nous serons ravis de vous présenter nos solutions de traiteur et de chefs privés, sur Rennes et dans ses environs. Cuisinés sur place ou en livraison, nous vous proposons des plats de saison, élaborés à partir de produits frais et s&apos;adaptant à votre régime alimentaire, notamment en mettant à l&apos;honneur le végétal avec notre offre végétarienne et végétalienne.
+                Pour vos séminaires, fêtes d&lsquo;anniversaire, mariages, caterings, dîners privés, cocktails ou buffets, nous élaborons un menu sur-mesure, totalement adapté à vos besoins. Nous serons ravis de vous présenter nos solutions de traiteur et de chefs privés, sur Rennes et dans ses environs. Cuisinés sur place ou en livraison, nous vous proposons des plats de saison, élaborés à partir de produits frais et s&lsquo;adaptant à votre régime alimentaire, notamment en mettant à l&lsquo;honneur le végétal avec notre offre végétarienne et végétalienne.
               </p>
             </div>
   
