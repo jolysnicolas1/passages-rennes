@@ -12,14 +12,14 @@ const features = [
     {
       name: 'Dîners privés',
       description:
-        "Mettez-vous à l’aise, et laissez-nous organiser une prestation gastronomique hors du commun dans un cadre familier.",
+        "Mettez-vous à l'aise, et laissez-nous organiser une prestation gastronomique hors du commun dans un cadre familier.",
       imageSrc: '/offers-diner.jpg',
       imageAlt: 'Dîners privés',
     },
     {
       name: 'Le coin sucré',
       description:
-        'Offrez-vous un moment de gourmandise avec notre offre de pâtisseries fines, viennoiseries maison et boissons chaudes, à l&lsquo;heure du goûter ou au petit-déjeuner.',
+        "Offrez-vous un moment de gourmandise avec notre offre de pâtisseries fines, viennoiseries maison et boissons chaudes, à l'heure du goûter ou au petit-déjeuner.",
       imageSrc: '/offers-sucre.jpg',
       imageAlt: 'Coin sucré',
     },
@@ -60,9 +60,6 @@ const features = [
                   <div className="mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4">
                     <h3 className="text-lg font-medium text-gray-900">{feature.name}</h3>
                     <p className="mt-2 text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: feature.description }}></p>
-                    <p>
-                      "Mettez-vous à l'aise, et laissez-nous organiser une prestation gastronomique hors du commun dans un cadre familier.",
-                    </p>
 
 
                   </div>
