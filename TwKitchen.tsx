@@ -43,11 +43,11 @@ export default function TwKitchen() {
             <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
               <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                 <p className="text-xl leading-8 text-gray-600">
-                    Pierre et Hugo se sont rencontrés à Rennes durant leurs études, lors de dîners qu’ils organisaient pour leurs amis. Mordus de gastronomie et férus d’écologie, ils se sont vite pris au jeu, et se sont impliqués dans un cadre associatif pour proposer leur vision d’une gastronomie conviviale, gourmande et durable, mettant notamment en avant la cuisine végétarienne. Poussés par leur perfectionnisme, ils ont opté pour une reconversion complète, et après avoir passé leurs diplômes de cuisinier et de pâtissier-chocolatier, ont choisi d’aller affûter leur technique dans des établissements prestigieux, restaurants étoilés, palaces et M.O.F.
+                    Pierre et Hugo se sont rencontrés à Rennes durant leurs études, lors de dîners qu&apos;ils organisaient pour leurs amis. Mordus de gastronomie et férus d&apos;écologie, ils se sont vite pris au jeu, et se sont impliqués dans un cadre associatif pour proposer leur vision d&apos;une gastronomie conviviale, gourmande et durable, mettant notamment en avant la cuisine végétarienne. Poussés par leur perfectionnisme, ils ont opté pour une reconversion complète, et après avoir passé leurs diplômes de cuisinier et de pâtissier-chocolatier, ont choisi d&apos;aller affûter leur technique dans des établissements prestigieux, restaurants étoilés, palaces et M.O.F.
                 </p>
                 <div className="mt-10 text-base leading-7 text-gray-700">
                   <p>
-                    Aujourd’hui de retour en Bretagne, ils vous proposent leur vision d’une gastronomie de partage, respectueuse de l’humain comme de l’environnement, accueillante et inclusive, pensée pour et avec vous.
+                    Aujourd&apos;hui de retour en Bretagne, ils vous proposent leur vision d&apos;une gastronomie de partage, respectueuse de l&apos;humain comme de l&apos;environnement, accueillante et inclusive, pensée pour et avec vous.
                   </p>
                 </div>
               </div>
