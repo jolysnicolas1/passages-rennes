@@ -13,7 +13,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between bg-gray-50 space-y-12 text-lime-950">
       <Hero />
       {/* <Offers /> */}
-      <TwLandingOffers></TwLandingOffers>
+      <TwLandingOffers />
       <Cooks2 />
       <Banner />
       <Slider />

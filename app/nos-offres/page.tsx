@@ -1,6 +1,7 @@
-import LastOffers from "./LastOffers"
+"use client"
+
 import TwOffers from "./TwOffers"
-import BgOffer from "./BgOffer"
+import OfferBg from "./OfferBg"
 
 export default function Home() {
   return (
@@ -8,9 +9,8 @@ export default function Home() {
       flex
       flex-col
       min-h-screen max-w-4xl mx-auto'>
-      <BgOffer></BgOffer>
       <TwOffers></TwOffers>
-
+      <OfferBg></OfferBg>
     </main>
   )
 }

@@ -45,21 +45,11 @@ export default function TwKitchen() {
                 <p className="text-xl leading-8 text-gray-600">
                     Pierre et Hugo se sont rencontrés à Rennes durant leurs études, lors de dîners qu&apos;ils organisaient pour leurs amis. Mordus de gastronomie et férus d&apos;écologie, ils se sont vite pris au jeu, et se sont impliqués dans un cadre associatif pour proposer leur vision d&apos;une gastronomie conviviale, gourmande et durable, mettant notamment en avant la cuisine végétarienne. Poussés par leur perfectionnisme, ils ont opté pour une reconversion complète, et après avoir passé leurs diplômes de cuisinier et de pâtissier-chocolatier, ont choisi d&apos;aller affûter leur technique dans des établissements prestigieux, restaurants étoilés, palaces et M.O.F.
                 </p>
-                <div className="mt-10 text-base leading-7 text-gray-700">
+                <div className="mt-10 text-xl leading-8 text-gray-600">
                   <p>
                     Aujourd&apos;hui de retour en Bretagne, ils vous proposent leur vision d&apos;une gastronomie de partage, respectueuse de l&apos;humain comme de l&apos;environnement, accueillante et inclusive, pensée pour et avec vous.
                   </p>
                 </div>
-              </div>
-              <div className="lg:flex lg:flex-auto lg:justify-center">
-                {/* <dl className="w-64 space-y-8 xl:w-80">
-                  {stats.map((stat) => (
-                    <div key={stat.label} className="flex flex-col-reverse gap-y-4">
-                      <dt className="text-base leading-7 text-gray-600">{stat.label}</dt>
-                      <dd className="text-5xl font-semibold tracking-tight text-gray-900">{stat.value}</dd>
-                    </div>
-                  ))}
-                </dl> */}
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ import contactPicture from '../public/contact.jpg'
 
 export default function TwContact() {
     return (
-      <div className="relative bg-white min-h-screen">
+      <div className="relative bg-transparent min-h-screen">
         <div className="lg:absolute lg:inset-0 lg:left-1/2">
             <Image
                 className="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full"
