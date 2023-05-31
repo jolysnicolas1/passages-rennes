@@ -61,9 +61,6 @@ const features = [
                     <h3 className="text-lg font-medium text-gray-900">{feature.name}</h3>
                     <p className="mt-2 text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: feature.description }}></p>
                     <p>
-                      "Mettez-vous à l’aise, et laissez-nous organiser une prestation gastronomique hors du commun dans un cadre familier.",
-                    </p>
-                    <p>
                       "Mettez-vous à l'aise, et laissez-nous organiser une prestation gastronomique hors du commun dans un cadre familier.",
                     </p>
 
