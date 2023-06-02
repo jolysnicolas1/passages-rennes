@@ -5,7 +5,6 @@ import offre2 from "/public/offres2.webp"
 import offre3 from "/public/offres3.webp"
 import offre4 from "/public/offres4.webp"
 import Image from "next/image"
-import { motion, useScroll, useTransform } from "framer-motion"
 import ButtonOffers from "./ButtonOffers"
 
 
@@ -37,12 +36,10 @@ import ButtonOffers from "./ButtonOffers"
     },
   ]
   export default function TwLandingOffers() {
-        let { scrollYProgress } =useScroll();
-    let y = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
     return (
       <div className="bg-transparent">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-          <div style={{y}} className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           <Image
               width={290}
               height={290}
