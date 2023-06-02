@@ -3,7 +3,6 @@
 import cooks from "/public/cooks.jpg"
 import Image from "next/image"
 import { motion, useScroll, useTransform } from "framer-motion"
-import portfolio01 from "/public/portfolio01.jpg"
 import portfolio02 from "/public/portfolio02.jpg"
 import portfolio03 from "/public/portfolio03.jpg"
 import portfolio04 from "/public/portfolio04.jpg"
@@ -90,9 +89,6 @@ import portfolio20 from "/public/portfolio20.jpg"
                 </div>
                 <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
                     <Image className="object-contain h-full" src={portfolio12} alt="" width={400} height={900} />    
-                </div>
-                <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
-                    <Image className="object-contain h-full" src={portfolio01} alt="" width={600} height={900} />    
                 </div>
                 <div className="relative snap-center snap-always h-full shrink-0 drop-shadow-2xl">
                     <Image className="object-contain h-full" src={portfolio15} alt="" width={600} height={900} />    
