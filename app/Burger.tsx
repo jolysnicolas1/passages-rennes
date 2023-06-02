@@ -12,7 +12,7 @@ const Burger = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const navigation = [
     { name: 'Nos offres', href: '/nos-offres' },
-    { name: 'Qui sommes nous ?', href: '/qui-sommes-,nous' },
+    { name: 'Qui sommes nous ?', href: '/qui-sommes-nous' },
     { name: 'Portfolio', href: '/portfolio' },
   ]
   return (
