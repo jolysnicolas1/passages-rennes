@@ -6,7 +6,7 @@ const features = [
       name: 'Mariages et grands évènements',
       description:
         'Profitez de moments magiques, et laissez-vous porter.',
-      imageSrc: '/offers-mariage.jpg',
+      imageSrc: '/offers-mariage.png',
       imageAlt: 'Mariage',
     },
     {
