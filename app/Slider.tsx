@@ -19,8 +19,8 @@ import portfolio14 from "/public/portfolio14.jpg"
 import portfolio15 from "/public/portfolio15.jpg"
 import portfolio16 from "/public/portfolio16.jpg"
 import portfolio17 from "/public/portfolio17.jpg"
-import portfolio18 from "/public/portfolio18.jpg"
-import portfolio19 from "/public/portfolio19.jpg"
+import portfolio18 from "/public/portfolio18.png"
+import portfolio19 from "/public/portfolio19.png"
 import portfolio20 from "/public/portfolio20.jpg"
 
 

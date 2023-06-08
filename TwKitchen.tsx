@@ -1,7 +1,7 @@
-import portfolio18 from "/public/portfolio18.jpg"
-import portfolio19 from "/public/portfolio19.jpg"
-import portfolio22 from "/public/portfolio22.jpg"
-import portfolio24 from "/public/portfolio24.jpg"
+import portfolio18 from "/public/portfolio18.png"
+import portfolio19 from "/public/portfolio19.png"
+import portfolio22 from "/public/portfolio22.png"
+import portfolio24 from "/public/portfolio24.png"
 import Image from "next/image"
 
 
