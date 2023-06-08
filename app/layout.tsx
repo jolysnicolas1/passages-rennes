@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`min-h-screen ${inter.className}`}>
+      <body className={`rounded-xl min-h-screen ${inter.className}`}>
         <Navbar />
         {children}
         <Footer />

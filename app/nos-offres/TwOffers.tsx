@@ -62,7 +62,7 @@ const features = [
                     <p className="mt-2 text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: feature.description }}></p>
                   </div>
                   <div className="flex-auto lg:col-span-7 xl:col-span-8">
-                    <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100">
+                    <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-md bg-gray-100">
                       <Image
                         src={feature.imageSrc}
                         width={800}

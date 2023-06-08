@@ -26,18 +26,7 @@ export default function Cooks2() {
             </div>
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
               <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-                <Image className="aspect-[7/5] w-[37rem] max-w-none  bg-gray-50 object-cover" src={cooks} alt="Picture of the author" width={500} height={900}/>
-              </div>
-              <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
-                {/* <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                    <Image className="aspect-[4/3] w-[24rem] max-w-none flex-none  bg-gray-50 object-cover" src={cooks} alt="Picture of the author" width={500} height={900}/>
-                </div> */}
-                {/* <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                    <Image className="aspect-[7/5] w-[37rem] max-w-none flex-none  bg-gray-50 object-cover" src={cooks} alt="Picture of the author" width={500} height={900}/>
-                </div> */}
-                {/* <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                    <Image className="aspect-[4/3] w-[24rem] max-w-none  bg-gray-50 object-cover" src={cooks} alt="Picture of the author" width={500} height={900}/>
-                </div> */}
+                <Image className="rounded-md aspect-[7/5] w-[37rem] max-w-none  bg-gray-50 object-cover" src={cooks} alt="Picture of the author" width={500} height={900}/>
               </div>
             </div>
           </div>

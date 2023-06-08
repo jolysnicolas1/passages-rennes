@@ -45,28 +45,28 @@ import ButtonOffers from "./ButtonOffers"
               height={290}
               src={offre1}
               alt=""
-              className="self-end rounded-lg bg-gray-100"
+              className="self-end rounded-md bg-gray-100"
             />
             <Image
               width={290}
               height={290}
               src={offre2}
               alt=""
-              className="rounded-lg bg-gray-100"
+              className="rounded-md bg-gray-100"
             />
           <Image
               width={290}
               height={290}
               src={offre3}
               alt=""
-              className="rounded-lg bg-gray-100"
+              className="rounded-md bg-gray-100"
             />
             <Image
               width={290}
               height={290}
               src={offre4}
               alt=""
-              className="rounded-lg bg-gray-100"
+              className="rounded-md bg-gray-100"
             />
           </div>
           <div className="pl-5">
