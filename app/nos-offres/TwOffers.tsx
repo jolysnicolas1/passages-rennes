@@ -45,7 +45,7 @@ const features = [
         <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
           <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
             <div className="max-w-3xl">
-              <p className="my-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Nos offres</p>
+              <p className="my-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Nos offres</p>
               <h2 className="font-semibold text-gray-500"><span className="text-lime-950">Passages</span> Gastronomie itinérante et sur-mesure</h2>
               <p className="mt-4 text-gray-500" dangerouslySetInnerHTML={{ __html: "Pour vos séminaires, fêtes d&lsquo;anniversaire, mariages, caterings, dîners privés, cocktails ou buffets, nous élaborons un menu sur-mesure, totalement adapté à vos besoins. Nous serons ravis de vous présenter nos solutions de traiteur et de chefs privés, sur Rennes et dans ses environs. Cuisinés sur place ou en livraison, nous vous proposons des plats de saison, élaborés à partir de produits frais et s&lsquo;adaptant à votre régime alimentaire, notamment en mettant à l&lsquo;honneur le végétal avec notre offre végétarienne et végétalienne." }}>
               </p>

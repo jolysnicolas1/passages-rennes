@@ -25,12 +25,12 @@ const Navbar = () => {
           </a>
         </div>
         <Burger />
-        <div className="hidden rounded-full bg-white px-5 py-3 shadow md:flex md:gap-x-12">
+        <div className="hidden rounded-full bg-white px-5 pt-4 pb-3 shadow md:flex md:gap-x-12">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 "
+              className="text-md font-medium leading-6 "
             >
               {item.name}
             </a>

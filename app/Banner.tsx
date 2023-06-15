@@ -5,7 +5,7 @@ export default function Banner() {
     return (
       <div className="pt-44 pb-12 md:py-32 bg-gray-100 w-full">
         <div className="mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:justify-between lg:px-8 space-x-12">
-          <h2 className="text-3xl font-bold tracking-tight text-red-950 sm:text-4xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-red-950 sm:text-4xl">
             <p className="">Un devis, une demande, un événement ?</p>
             <p className="">Contactez-nous</p>
           </h2>
