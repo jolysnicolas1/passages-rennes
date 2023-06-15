@@ -1,4 +1,8 @@
+"use client"
+
 import Image from "next/image"
+import OfferBg from "./OfferBg"
+
 
 
 const features = [
@@ -42,6 +46,7 @@ const features = [
   export default function TwOffers() {
     return (
       <div className="bg-transparent">
+        <OfferBg></OfferBg>
         <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
           <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
             <div className="max-w-3xl">

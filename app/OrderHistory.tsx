@@ -1,4 +1,8 @@
+"use client"
+
 import Image from 'next/image'
+import HeroBgOne from './HeroBgOne'
+
 
 const orders = [
 
@@ -179,6 +183,7 @@ export default function OrderHistory() {
         className="mx-auto max-w-2xl px-4 py-24 sm:px-6 lg:max-w-7xl lg:px-8"
         aria-labelledby="order-history-heading"
       >
+        <HeroBgOne></HeroBgOne>
         <div className="max-w-xl">
           <h1 id="order-history-heading" className="text-3xl font-semibold tracking-tight text-gray-900">
             Portfolio

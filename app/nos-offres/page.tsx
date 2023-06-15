@@ -1,7 +1,4 @@
-"use client"
-
 import TwOffers from "./TwOffers"
-import OfferBg from "./OfferBg"
 
 export const metadata = {
   title: 'Passages | Nos offres',
@@ -15,7 +12,6 @@ export default function Home() {
       flex-col
       min-h-screen max-w-4xl mx-auto'>
       <TwOffers></TwOffers>
-      <OfferBg></OfferBg>
     </main>
   )
 }

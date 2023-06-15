@@ -1,5 +1,4 @@
 import Image from "next/image";
-import offre4 from "/public/offres4.webp"
 
 const ImageCol = ({images}: {images: string[]}) => {
   return <>{images.map(image => <div           key={image}

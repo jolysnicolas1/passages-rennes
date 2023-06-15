@@ -1,5 +1,4 @@
 import TwContact from '../TwContact'
-import ContactBg from '../ContactBg'
 
 export const metadata = {
   title: 'Passages | Contact',
@@ -10,7 +9,6 @@ export default function Home() {
   return (
     <main className="">
         <TwContact />
-        {/* <ContactBg /> */}
     </main>
   )
 }
