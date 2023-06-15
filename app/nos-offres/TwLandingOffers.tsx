@@ -70,7 +70,7 @@ import ButtonOffers from "./ButtonOffers"
             />
           </div>
           <div className="pl-5">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Nos offres</h2>
+            <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">Nos offres</h2>
             <ButtonOffers />
   
             <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">

@@ -180,7 +180,7 @@ export default function OrderHistory() {
         aria-labelledby="order-history-heading"
       >
         <div className="max-w-xl">
-          <h1 id="order-history-heading" className="text-3xl font-bold tracking-tight text-gray-900">
+          <h1 id="order-history-heading" className="text-3xl font-semibold tracking-tight text-gray-900">
             Portfolio
           </h1>
           <p className="mt-2 text-sm text-gray-500">

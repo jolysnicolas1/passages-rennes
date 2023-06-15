@@ -17,10 +17,10 @@ export default function HeroContent() {
                     height={300}
                 />
               <h1 className="text-4xl font-medium tracking-tight text-lime-950 sm:text-6xl">
-              Passages <strong className="passage font-extralight">gastronomie itinérante et sur-mesure</strong>
+                Passages <strong className="passage font-light">gastronomie itinérante et sur-mesure</strong>
               </h1>
             </div>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 font-medium">
             Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées . Contactez-nous pour déterminer ensemble l’offre qui vous conviendra le mieux !
             </p>
             <ButtonContact></ButtonContact>

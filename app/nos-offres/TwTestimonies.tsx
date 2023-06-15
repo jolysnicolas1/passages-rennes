@@ -38,7 +38,7 @@ const testimonials = [
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-xl text-center">
             <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Témoignages</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
               On a travaillé pour eux
             </p>
           </div>
@@ -48,13 +48,13 @@ const testimonials = [
                 <div key={testimonial.author.name} className="pt-8 sm:inline-block sm:w-full sm:px-4">
                   <figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
                     <blockquote className="text-gray-900">
-                        <div className="text-3xl text-gray-700 text- w-full">“</div>
+                        <div className="text-3xl text-gray-400 text-w-full">“</div>
                       <p>{testimonial.body}</p>
-                        <div dir="rtl" className="text-3xl text-gray-700 text- w-full">”</div>
+                        <div dir="rtl" className="text-3xl text-gray-400 text-w-full">”</div>
                     </blockquote>
                     <figcaption className="mt-6 flex items-center gap-x-4">
                       <div>
-                        <div className="font-semibold text-gray-900">{testimonial.author.name}</div>
+                        <div className="font-medium text-gray-900">{testimonial.author.name}</div>
                       </div>
                     </figcaption>
                   </figure>
