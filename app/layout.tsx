@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import localFont from 'next/font/local'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 const myFont = localFont({
   src: [
