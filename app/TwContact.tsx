@@ -1,13 +1,17 @@
+"use client"
+
 import Link from "next/link"
 import { FaInstagram } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import Image from "next/image";
 import contactPicture from '../public/contact.jpg'
+import ContactBg from "./ContactBg";
 
 
 export default function TwContact() {
     return (
       <div className="relative bg-transparent min-h-screen">
+        <ContactBg></ContactBg>
         <div className="lg:absolute lg:inset-0 lg:left-1/2">
             <Image
                 className="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full"

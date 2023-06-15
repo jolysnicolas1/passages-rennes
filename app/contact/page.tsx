@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="">
         <TwContact />
-        <ContactBg />
+        {/* <ContactBg /> */}
     </main>
   )
 }
