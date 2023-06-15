@@ -3,7 +3,6 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import localFont from 'next/font/local'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 
 const myFont = localFont({
   src: [
@@ -77,6 +76,13 @@ const myFont = localFont({
 export const metadata = {
   title: 'Passages, gastronomie itinérante et sur-mesure',
   description: 'Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées.',
+  openGraph: {
+    images: "https://passages-rennes.com/cooks.jpg",
+    type: "website",
+    title: 'Passages, gastronomie itinérante et sur-mesure',
+    description: 'Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées.',
+    url: "https://passages-rennes.com",
+  }
 }
 
 
@@ -88,9 +94,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        
-      </Head>
+      {/* <Head>
+        <meta property="og:title" content={metadata.title}/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://passages-rennes.com"/>
+        <meta property="og:image" content="https://passages-rennes.com/cooks.jpg"/>
+        <meta property="og:description" content={metadata.description}/>
+      </Head> */}
+      
       <body className={`rounded-xl min-h-screen ${myFont.className}`}>
         <Navbar />
         {children}
