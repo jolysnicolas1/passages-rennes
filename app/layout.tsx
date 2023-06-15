@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import localFont from 'next/font/local'
+import Head from 'next/head'
 
 const myFont = localFont({
   src: [
