@@ -1,5 +1,3 @@
-"use client"
-
 import TwContact from '../TwContact'
 import ContactBg from '../ContactBg'
 
