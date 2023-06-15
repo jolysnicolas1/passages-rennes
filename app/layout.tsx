@@ -1,5 +1,4 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import localFont from 'next/font/local'
@@ -74,11 +73,9 @@ const myFont = localFont({
 })
 
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata = {
-  title: 'Passages',
-  description: 'Propose des catring sur Rennes et sa région',
+  title: 'Passages, gastronomie itinérante et sur-mesure',
+  description: 'Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées.',
 }
 
 
@@ -90,6 +87,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        
+      </Head>
       <body className={`rounded-xl min-h-screen ${myFont.className}`}>
         <Navbar />
         {children}
