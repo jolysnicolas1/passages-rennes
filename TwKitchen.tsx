@@ -7,11 +7,11 @@ import Image from "next/image"
 
 export default function TwKitchen() {
     return (
-      <div className="space-y-20 p-y-12 space-y-24">
-        <div className="overflow-hidden mx-auto max-w-7xl px-6 lg:flex lg:px-8">
+      <div className="py-96 space-y-24">
+        <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
             <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-              <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Notre cuisine</h2>
+              <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Catering, cuisine gastronomique, offre végétarienne et végétalienne végétarienne</h1>
               <p className="mt-6 text-xl leading-8 text-gray-600">
               Passages, c’est une vision de la gastronomie centrée sur le dialogues des mondes, ou la gastronomie rencontre la street-food, la cuisine traditionnelle française puise dans des influences du monde entier, l’élégance épouse la convivialité, où l’on travaille avec autant de plaisir des plats végétariens que des viandes d’éleveurs locaux, et où les desserts jouent d’associations inattendues. 
               </p>
@@ -37,7 +37,7 @@ export default function TwKitchen() {
             </div>
           </div>
         </div>
-        <div className="z-40 mx-auto max-w-7xl px-6 lg:px-8 pb-20 pt-32">
+        <div className="border border-black border-4 mx-auto max-w-7xl px-6 lg:px-8 pb-20 pt-32">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
             <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Notre parcours, nos valeurs</h2>
             <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">

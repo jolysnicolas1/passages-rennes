@@ -1,5 +1,3 @@
-
-
 import './globals.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -96,14 +94,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <Head>
-        <meta property="og:title" content={metadata.title}/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://passages-rennes.com"/>
-        <meta property="og:image" content="https://passages-rennes.com/cooks.jpg"/>
-        <meta property="og:description" content={metadata.description}/>
-      </Head> */}
-      
       <body className={`rounded-xl min-h-screen ${myFont.className}`}>
         <Navbar />
         {children}
