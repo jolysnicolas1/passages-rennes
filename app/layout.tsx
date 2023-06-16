@@ -72,17 +72,29 @@ const myFont = localFont({
   display: 'swap',
 })
 
+const title = 'Passages, gastronomie itinérante et sur-mesure'
+const desc = 'Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées.'
+const image = "https://passages-rennes.com/cooks.jpg"
 
 export const metadata = {
-  title: 'Passages, gastronomie itinérante et sur-mesure',
-  description: 'Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées.',
+  verification: {
+    google: "dagFnwii5HfTcKs0SHDaT9-kwRimu2BRU3pG-paI9QY"
+  },
+  title: title,
+  description: desc,
   openGraph: {
-    images: "https://passages-rennes.com/cooks.jpg",
+    images: image,
     type: "website",
-    title: 'Passages, gastronomie itinérante et sur-mesure',
+    title: title,
     description: 'Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées.',
     url: "https://passages-rennes.com",
-  }
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: title,
+    description: desc,
+    images: [image],
+  },
 }
 
 

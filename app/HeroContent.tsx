@@ -12,7 +12,7 @@ export default function HeroContent() {
                 <Image
                     className="h-44 w-auto hidden md:inline"
                     src={logo}
-                    alt="Picture of the author"
+                    alt="Passages - gastronomie itinérante et sur-mesure"
                     width={300}
                     height={300}
                 />
@@ -21,7 +21,7 @@ export default function HeroContent() {
               </h1>
             </div>
             <p className="mt-6 text-lg leading-8 text-gray-600 font-medium">
-            Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées . Contactez-nous pour déterminer ensemble l’offre qui vous conviendra le mieux !
+            Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées. Contactez-nous pour déterminer ensemble l’offre qui vous conviendra le mieux !
             </p>
             <ButtonContact></ButtonContact>
           </div>

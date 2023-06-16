@@ -13,9 +13,9 @@ export default function Hero() {
     return (
       <motion.div style={{y}} className="w-full">
         <div className="relative isolate pt-14">
-          <HeroBgOne></HeroBgOne>
-          <HeroContent></HeroContent>
-          <HeroBgTwo></HeroBgTwo>
+          <HeroBgOne />
+          <HeroContent />
+          <HeroBgTwo />
         </div>
       </motion.div>
     )
