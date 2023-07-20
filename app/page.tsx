@@ -1,11 +1,9 @@
-import Banner from "@/components/Banner";
-import Cooks2 from "@/components/Cooks2";
-import HeroContent from "@/components/HeroContent";
-import Slider from "@/components/Slider";
-import TwLandingOffers from "@/components/TwLandingOffers";
-import TwTestimonies from "@/components/TwTestimonies";
-
-
+import Banner from "@/components/Banner"
+import Cooks2 from "@/components/Cooks2"
+import HeroContent from "@/components/HeroContent"
+import Slider from "@/components/Slider"
+import TwLandingOffers from "@/components/TwLandingOffers"
+import TwTestimonies from "@/components/TwTestimonies"
 
 export default function Home() {
   return (

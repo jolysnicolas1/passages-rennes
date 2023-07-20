@@ -1,7 +1,7 @@
 "use client"
 
-import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion"
+import Image from "next/image"
 
 const images = [
   "/portfolio07.jpg",
@@ -12,11 +12,11 @@ const images = [
   "/portfolio18.png",
   "/portfolio10.jpg",
   "/portfolio20.jpg",
-];
+]
 
 export default function Slider() {
-  const { scrollYProgress } = useScroll();
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
+  const { scrollYProgress } = useScroll()
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"])
 
   return (
     <div className="relative max-w-full w-full xl:max-w-7xl h-96">
@@ -55,5 +55,5 @@ export default function Slider() {
         ))}
       </motion.div>
     </div>
-  );
+  )
 }
