@@ -1,4 +1,4 @@
-import OrderHistory from "../OrderHistory"
+import OrderHistory from "../../components/OrderHistory"
 
 export const metadata = {
   title: 'Passages | Portfolio',

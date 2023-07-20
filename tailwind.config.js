@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        serif: ['var(--font-bluu-next)'],
+        sans: ['var(--font-gill-sans)'],
+
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -14,6 +19,9 @@ module.exports = {
       },
       colors: {
         test: '#FDBEE0',
+        orange: '#FF773D',
+        myGreen: '#3fa535',
+        myYellow: "#ffe596",
       },
     },
   },

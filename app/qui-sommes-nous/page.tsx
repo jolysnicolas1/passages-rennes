@@ -1,5 +1,5 @@
-import TwKitchen from "@/TwKitchen"
-import HeroBgTwo from "../HeroBgTwo"
+import HeroBgTwo from "@/components/HeroBgTwo"
+import TwKitchen from "@/components/TwKitchen"
 
 export const metadata = {
   title: 'Passages | Qui sommes-nous?',
@@ -9,8 +9,8 @@ export const metadata = {
 export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between space-y-12 text-lime-950 my-24'>
-      <TwKitchen></TwKitchen>
-      <HeroBgTwo></HeroBgTwo>
+      <TwKitchen/>
+      <HeroBgTwo/>
     </main>
   )
 }

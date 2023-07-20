@@ -1,4 +1,4 @@
-import TwOffers from "./TwOffers"
+import TwOffers from "@/components/TwOffers"
 
 export const metadata = {
   title: 'Passages | Nos offres',
@@ -11,7 +11,7 @@ export default function Home() {
       flex
       flex-col
       min-h-screen max-w-4xl mx-auto'>
-      <TwOffers></TwOffers>
+      <TwOffers />
     </main>
   )
 }
