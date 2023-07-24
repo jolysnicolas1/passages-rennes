@@ -1,3 +1,4 @@
+import BellAlertIcon from "@heroicons/react/24/outline/BellAlertIcon"
 import Link from "next/link"
 
 import { buttonVariants } from "@/components/ui/button"
@@ -24,6 +25,7 @@ export default function HeroContent() {
                 href="/contact"
                 className={buttonVariants({ variant: "outline", size: "xl" })}
               >
+                <BellAlertIcon className="mr-2 h-4 w-4 sm:h-5 sm:w-5 sm:mr-3" />{" "}
                 Réserver une table
               </Link>
               <Link
