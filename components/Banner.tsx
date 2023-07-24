@@ -1,5 +1,5 @@
 "use client"
-import ButtonContact from "./ButtonContact"
+import Button from "./Button"
 
 export default function Banner() {
   return (
@@ -10,7 +10,7 @@ export default function Banner() {
           <p className="">Contactez-nous</p>
         </h2>
         <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
-          <ButtonContact></ButtonContact>
+          <Button href="/contact" >Contact</Button>
         </div>
       </div>
       {/* <div className="mx-auto max-w-7xl px-6">

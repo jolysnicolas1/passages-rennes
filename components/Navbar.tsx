@@ -38,9 +38,8 @@ const Navbar = ({ isDark }: Props) => {
         </div>
         <Burger />
         <div
-          className={`hidden font-sans px-5 pt-4 pb-3 shadow md:flex md:gap-x-12 ${
-            isDark ? " bg-transparent text-white" : "bg-white rounded-full"
-          }`}
+          className={`hidden font-sans px-5 pt-4 pb-3 md:flex md:gap-x-12 ${isDark ? " bg-transparent text-white" : "bg-white rounded-full text-black shadow"
+            }`}
         >
           {navigation.map(item => (
             <a
