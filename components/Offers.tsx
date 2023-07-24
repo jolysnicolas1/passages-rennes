@@ -35,10 +35,10 @@ export default function Offers({
                 key={feature.name}
                 className="border-t border-gray-200 pt-4"
               >
-                <dt className="font-medium text-gray-900">{feature.name}</dt>
-                <dd className="mt-2 text-sm text-gray-500">
-                  {feature.description}
-                </dd>
+                <dt className="font-medium text-gray-900 text-lg">
+                  {feature.name}
+                </dt>
+                <dd className="mt-2 text-sm-500">{feature.description}</dd>
               </div>
             ))}
           </dl>
