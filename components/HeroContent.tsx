@@ -1,6 +1,6 @@
-"use client"
+import Link from "next/link"
 
-import Button from "./Button"
+import { buttonVariants } from "@/components/ui/button"
 
 export default function HeroContent() {
   return (
@@ -8,7 +8,7 @@ export default function HeroContent() {
       <div className="relative isolate overflow-hidden pt-14">
         <img
           src="/photos/hero.jpg"
-          alt=""
+          alt="Passage rennes - gastronomie sur mesure"
           className="absolute inset-0 opacity-50 -z-10 h-full w-full object-cover"
         />
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
@@ -20,10 +20,18 @@ export default function HeroContent() {
               Rennes
             </p>
             <div className="mt-10 flex sm:flex-row flex-col items-center justify-center gap-x-4">
-              <Button href="/contact" >Réserver une table</Button>
-              <a href="/" className="text-xl font-semibold leading-6 text-white">
-                Vos évènements <span aria-hidden="true">→</span>
-              </a>
+              <Link
+                href="/contact"
+                className={buttonVariants({ variant: "outline", size: "xl" })}
+              >
+                Réserver une table
+              </Link>
+              <Link
+                href="/contact"
+                className={buttonVariants({ variant: "whiteLink", size: "xl" })}
+              >
+                Vos évènements <span aria-hidden="true"> →</span>
+              </Link>
             </div>
           </div>
         </div>
