@@ -1,9 +1,9 @@
 "use client"
 
-import Link from "next/link"
-import { FaInstagram } from "react-icons/fa";
-import { FaRegEnvelope } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link"
+import { FaInstagram , FaRegEnvelope } from "react-icons/fa";
+
 import contactPicture from '../public/contact.jpg'
 import ContactBg from "./ContactBg";
 

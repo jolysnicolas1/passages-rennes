@@ -2,8 +2,8 @@ import { motion, useScroll, useTransform } from "framer-motion"
 
 
 export default function Contactbg() {
-  let { scrollYProgress } =useScroll();
-  let y = useTransform(scrollYProgress, [0, 1], ["60%", "50%"]);
+  const { scrollYProgress } =useScroll();
+  const y = useTransform(scrollYProgress, [0, 1], ["60%", "50%"]);
     return (
     <motion.div style={{y}}
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
