@@ -13,12 +13,13 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { buttonVariants } from "./ui/button"
 
 const images = [
-  "/photos/portfolio1.jpg",
-  "/photos/portfolio2.jpg",
-  "/photos/portfolio2.jpg",
-  "/photos/portfolio4.jpg",
-  "/photos/portfolio5.jpg",
-  "/photos/portfolio6.jpg",
+  "/photos/portfolio16.jpg",
+  "/photos/portfolio9.jpg",
+  "/photos/portfolio14.jpg",
+  "/photos/portfolio13.jpg",
+  "/photos/portfolio21.jpg",
+  "/photos/portfolio23.jpg",
+  "/photos/portfolio17.jpg",
   "/photos/portfolio7.jpg",
 ]
 
@@ -35,13 +36,13 @@ export default function Slider() {
               loop={true}
               initialSlide={3}
             >
-              {images.map(image => (
+              {images.map((image, i) => (
                 <SwiperSlide key={image}>
                   <div className="rounded-md h-full shrink-0 drop-shadow-2xl relative">
                     <Image
                       // className="rounded-md object-contain h-full"
                       src={image}
-                      alt=""
+                      alt={`Passages - Portfolio ${i}`}
                       objectFit="cover"
                       fill
                     />

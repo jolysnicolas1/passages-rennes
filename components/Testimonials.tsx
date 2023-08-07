@@ -39,7 +39,7 @@ export default function Testimonials() {
           <h2 className="text-3xl font-serif font-semibold tracking-tight text-slate-900 sm:text-4xl pb-12">
             On a travaillé pour eux
           </h2>
-          <p className="mt-2 text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl"></p>
+          <p className="mt-2 text-3xl font-medium tracking-tight text-slate-900 sm:text-4xl"></p>
         </div>
         <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
           <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
@@ -48,20 +48,20 @@ export default function Testimonials() {
                 key={testimonial.author.name}
                 className="pt-8 sm:inline-block sm:w-full sm:px-4"
               >
-                <figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
-                  <blockquote className="text-gray-900">
-                    <div className="text-3xl text-gray-400 text-w-full">“</div>
-                    <p>{testimonial.body}</p>
+                <figure className="rounded-2xl bg-slate-50 p-8 text-sm leading-6">
+                  <blockquote className="text-slate-900">
+                    <div className="text-3xl text-slate-400 text-w-full">“</div>
+                    <p className="text-sm md:text-base">{testimonial.body}</p>
                     <div
                       dir="rtl"
-                      className="text-3xl text-gray-400 text-w-full"
+                      className="text-3xl text-slate-400 text-w-full"
                     >
                       ”
                     </div>
                   </blockquote>
                   <figcaption className="mt-6 flex items-center gap-x-4">
                     <div>
-                      <div className="font-medium text-gray-900">
+                      <div className="font-medium text-sm md:text-base text-slate-900">
                         {testimonial.author.name}
                       </div>
                     </div>

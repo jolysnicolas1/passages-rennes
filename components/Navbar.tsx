@@ -1,22 +1,20 @@
+import { BellAlertIcon } from "@heroicons/react/24/outline"
 import Image from "next/image"
+import Link from "next/link"
 
 import logo from "/public/logo_passages_vert.png"
+import { navigation } from "@/lib/utils"
 
 import Burger from "./Burger"
+import { buttonVariants } from "./ui/button"
 
 type Props = {
   isDark?: boolean
 }
 
 const Navbar = ({ isDark }: Props) => {
-  const navigation = [
-    { name: "Nos offres", href: "/nos-offres" },
-    { name: "Qui sommes nous ?", href: "/qui-sommes-nous" },
-    { name: "Portfolio", href: "/portfolio" },
-  ]
-
   return (
-    <header className="absolute inset-x-0 top-0 z-50 bg-white lg:bg-transparent">
+    <header className={`absolute inset-x-0 top-0 z-50  bg-transparent`}>
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -36,10 +34,13 @@ const Navbar = ({ isDark }: Props) => {
             />
           </a>
         </div>
-        <Burger />
+        <Burger isDark={isDark} />
         <div
-          className={`hidden font-sans px-5 pt-4 pb-3 md:flex md:gap-x-12 ${isDark ? " bg-transparent text-white" : "bg-white rounded-full text-black shadow"
-            }`}
+          className={`hidden font-sans px-5 pt-4 pb-3 md:flex md:gap-x-12 ${
+            isDark
+              ? " bg-transparent text-white"
+              : "bg-white rounded-full text-black shadow"
+          }`}
         >
           {navigation.map(item => (
             <a
@@ -52,12 +53,12 @@ const Navbar = ({ isDark }: Props) => {
           ))}
         </div>
         <div className="hidden md:flex md:flex-1 md:justify-end">
-          <a
+          <Link
             href="/contact"
-            className="text-sm font-semibold leading-6 "
+            className={buttonVariants({ variant: "outline", size: "sm" })}
           >
-            Contact <span aria-hidden="true">&rarr;</span>
-          </a>
+            <BellAlertIcon className="mr-2 h-4 w-4" /> Réserver
+          </Link>
         </div>
       </nav>
     </header>

@@ -1,4 +1,4 @@
-import TwContact from "@/components/TwContact"
+import Contact from "@/components/Contact"
 
 export const metadata = {
   title: "Passages | Contact",
@@ -8,8 +8,8 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
-      <TwContact />
-    </>
+    <main>
+      <Contact />
+    </main>
   )
 }

@@ -31,7 +31,8 @@
     "tailwind.config.js",
     "postcss.config.js",
     "next.config.js",
-    "style.js"
+    "style.js",
+    "lib/socials.tx"
   ],
   "exclude": ["node_modules"]
 }

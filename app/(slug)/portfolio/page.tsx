@@ -1,4 +1,4 @@
-import OrderHistory from "../../components/OrderHistory"
+import OrderHistory from "@/components/OrderHistory"
 
 export const metadata = {
   title: "Passages | Portfolio",
@@ -9,7 +9,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="">
-      <OrderHistory></OrderHistory>
+      <OrderHistory />
     </main>
   )
 }
