@@ -1,13 +1,15 @@
 /* eslint-disable sonarjs/no-duplicate-string */
+"use client"
 import { BellAlertIcon } from "@heroicons/react/24/outline"
+import { UtensilsCrossed } from "lucide-react"
 import Link from "next/link"
 
 import Banner from "@/components/Banner"
-import Cooks2 from "@/components/Cooks2"
+import Cooks from "@/components/Cooks"
 import HeroContent from "@/components/HeroContent"
 import Offers from "@/components/Offers"
 import Slider from "@/components/Slider"
-import TwTestimonies from "@/components/TwTestimonies"
+import Testimonials from "@/components/Testimonials"
 import { buttonVariants } from "@/components/ui/button"
 
 export default function Home() {
@@ -25,35 +27,38 @@ export default function Home() {
         }
         title="La table des Ateliers du vent"
         images={[
-          { href: "/photos/offre1.jpg", alt: "Passages Rennes - offre 1" },
-          { href: "/photos/offre2.jpg", alt: "Passages Rennes - offre 2" },
-          { href: "/photos/offre3.jpg", alt: "Passages Rennes - offre 3" },
-          { href: "/photos/offre4.jpg", alt: "Passages Rennes - offre 4" },
+          {
+            href: "/photos/dessert.jpg",
+            alt: "Passages Rennes - la table des Ateliers du Vent 2",
+          },
+          {
+            href: "/photos/Diner.jpg",
+            alt: "Passages Rennes - la table des Ateliers du Vent 3",
+          },
+          {
+            href: "/photos/Mariage.jpg",
+            alt: "Passages Rennes - la table des Ateliers du Vent 4",
+          },
+          {
+            href: "/photos/assiette.jpg",
+            alt: "Passages Rennes - la table des Ateliers du Vent 1",
+          },
         ]}
         features={[
           {
-            name: "Mariages et grands évènements",
+            name: "La table",
             description:
               "Profitez de moments magiques, et laissez-vous porter.",
           },
           {
-            name: "Dîners privés",
+            name: "Le snack",
             description:
               "Mettez-vous à l’aise, et laissez-nous organiser une prestation gastronomique hors du commun dans un cadre familier.",
           },
           {
-            name: "Le coin sucré",
+            name: "Les évenements",
             description:
               "Offrez-vous un moment de gourmandise avec notre offre de pâtisseries fines, viennoiseries maison et boissons chaudes, à l&lsquo;heure du goûter ou au petit-déjeuner.",
-          },
-          {
-            name: "Cocktails et réceptions",
-            description:
-              "De bouchées délicates, des boissons innovantes, un service impeccable… Offrez-vous une soirée réussie.",
-          },
-          {
-            name: "Caterings et séminaires",
-            description: "Caterings et séminaires",
           },
         ]}
       />
@@ -64,7 +69,7 @@ export default function Home() {
             href="/contact"
             className={buttonVariants({ variant: "outline", size: "lg" })}
           >
-            <BellAlertIcon className="mr-2 h-4 w-4" /> Réserver une table
+            <UtensilsCrossed className="mr-2 h-4 w-4" /> Parcourir nos offres
           </Link>
         }
         title="Nos offres sur messure"
@@ -97,15 +102,16 @@ export default function Home() {
           },
           {
             name: "Caterings et séminaires",
-            description: "Caterings et séminaires",
+            description:
+              "Pour vos grands groupes et rassemblements, nous vous accompagnons en vous offrant des menus adaptés et variés",
           },
         ]}
       />
-
-      <Cooks2 />
       <Banner />
+
+      <Cooks />
       <Slider />
-      <TwTestimonies />
+      <Testimonials />
     </main>
   )
 }

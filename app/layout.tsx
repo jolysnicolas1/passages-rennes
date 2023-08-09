@@ -127,7 +127,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`rounded-xl font-sans min-h-screen ${gillSans.variable} ${bluuNext.variable}`}
+        className={`rounded-xl overflow-x-hidden font-sans min-h-screen ${gillSans.variable} ${bluuNext.variable}`}
       >
         <Navbar isDark />
         {children}

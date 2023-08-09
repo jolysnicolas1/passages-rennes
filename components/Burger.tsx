@@ -1,16 +1,25 @@
 "use client"
 
 import { Dialog } from "@headlessui/react"
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
+import {
+  Bars3Icon,
+  BellAlertIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline"
+import Link from "next/link"
 import { useState } from "react"
 
-const Burger = () => {
+import { navigation } from "@/lib/utils"
+
+import { buttonVariants } from "./ui/button"
+
+type Props = {
+  isDark?: boolean
+}
+
+const Burger = ({ isDark }: Props) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const navigation = [
-    { name: "Nos offres", href: "/nos-offres" },
-    { name: "Qui sommes nous ?", href: "/qui-sommes-nous" },
-    { name: "Portfolio", href: "/portfolio" },
-  ]
+
   return (
     <div className="flex md:hidden">
       <button
@@ -20,7 +29,7 @@ const Burger = () => {
       >
         <span className="sr-only">Open main menu</span>
         <Bars3Icon
-          className="h-6 w-6"
+          className={`h-6 w-6 ${isDark ? "text-white" : "text-gray-900"}`}
           aria-hidden="true"
         />
       </button>
@@ -33,16 +42,6 @@ const Burger = () => {
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            {/* <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <Image
-                className="h-8 w-auto"
-                src={logo}
-                width={120}
-                height={120}
-                alt=""
-              />
-            </a> */}
             <button
               type="button"
               className="-m-2.5  p-2.5 text-gray-700"
@@ -69,12 +68,12 @@ const Burger = () => {
                 ))}
               </div>
               <div className="py-6">
-                <a
+                <Link
                   href="/contact"
-                  className="-mx-3 block  py-2.5 px-3 text-base font-semibold leading-7 hover:bg-gray-50"
+                  className={buttonVariants({ variant: "outline", size: "lg" })}
                 >
-                  Contact
-                </a>
+                  <BellAlertIcon className="mr-2 h-4 w-4" /> Réserver une table
+                </Link>
               </div>
             </div>
           </div>
