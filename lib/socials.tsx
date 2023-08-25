@@ -1,8 +1,14 @@
 "use client"
 
-import { Mail, PhoneCall } from "lucide-react"
+import { Mail, Map, PhoneCall } from "lucide-react"
 
 export const socials = [
+  {
+    name: "place Clara Zeitkin, 35000 Rennes",
+    href: "https://www.google.com/maps/place/La+Cantine+des+Ateliers+du+Vent/@48.1031181,-1.6967294,15z/data=!4m2!3m1!1s0x0:0x2f5a648e9c59587e?sa=X&ved=2ahUKEwjDpYvH2_eAAxVsXaQEHXLEDJoQ_BJ6BAhBEAA&ved=2ahUKEwjDpYvH2_eAAxVsXaQEHXLEDJoQ_BJ6BAhTEAg",
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    icon: (props: any) => <Map {...props} />,
+  },
   {
     name: "passages.rennes@gmail.com",
     href: "mailto:passages.rennes@gmail.com",
@@ -17,7 +23,7 @@ export const socials = [
   },
   {
     name: "Facebook",
-    href: "#",
+    href: "https://www.facebook.com/lacantinedesateliers",
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     icon: (props: any) => (
       <svg

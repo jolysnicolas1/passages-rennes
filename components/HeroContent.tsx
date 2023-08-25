@@ -18,7 +18,10 @@ export default function HeroContent() {
               Passages
             </h1>
             <p className="mt-6 text-4xl font-medium leading-8 text-white">
-              Rennes
+              place Clara Zeitkin, 35000 Rennes
+            </p>
+            <p className="mt-2 italic text-4xl font-medium leading-8 text-white">
+              aux Ateliers du vent
             </p>
             <div className="mt-10 flex sm:flex-row flex-col items-center justify-center gap-x-4">
               <Link
@@ -26,14 +29,14 @@ export default function HeroContent() {
                 className={buttonVariants({ variant: "outline", size: "xl" })}
               >
                 <BellAlertIcon className="mr-2 h-4 w-4 sm:h-5 sm:w-5 sm:mr-3" />{" "}
-                Réserver une table
+                Ouverture début septembre
               </Link>
-              <Link
-                href="/contact"
+              {/* <Link
+                href="/#traiteur"
                 className={buttonVariants({ variant: "whiteLink", size: "xl" })}
               >
                 Vos évènements <span aria-hidden="true"> →</span>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
-import { ChefHat } from "lucide-react"
+// import { ChefHat } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
 
+// import Link from "next/link"
 import cooks from "/public/cooks.jpg"
 
-import { buttonVariants } from "./ui/button"
+// import { buttonVariants } from "./ui/button"
 
 export default function Cooks() {
   return (
@@ -13,7 +13,7 @@ export default function Cooks() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
           <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8 space-y-4">
             <h2 className="text-3xl font-serif font-semibold tracking-tight text-slate-900 sm:text-4xl pb-12">
-              Notre équipe
+              Nos valeurs
             </h2>
             <p className="text-lg leading-8 text-slate-700">
               Passages, c’est l’histoire de deux amis, passionnés par le goût et
@@ -24,13 +24,14 @@ export default function Cooks() {
               s’installer à Rennes afin de mettre leur expérience et leur
               complicité au service de vos événements.
             </p>
-            <Link
+            {/* <Link
               href="/qui-sommes-nous"
               className={buttonVariants({ variant: "outline", size: "lg" })}
             >
               <ChefHat className="mr-2 h-4 w-4" /> Découvrez l&apos;équipe
-            </Link>
+            </Link> */}
           </div>
+
           <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
             <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
               <Image
