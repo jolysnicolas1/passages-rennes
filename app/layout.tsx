@@ -129,7 +129,7 @@ export default function RootLayout({
       <body
         className={`rounded-xl overflow-x-hidden font-sans min-h-screen ${gillSans.variable} ${bluuNext.variable}`}
       >
-        <Navbar isDark />
+        <Navbar />
         {children}
         <Footer />
       </body>

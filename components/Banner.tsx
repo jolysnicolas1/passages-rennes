@@ -18,7 +18,7 @@ export default function Banner() {
           </p> */}
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
-              href="/contact"
+              href="/#contact"
               className={buttonVariants({ variant: "outline", size: "xl" })}
             >
               <HandRaisedIcon className="mr-2 h-4 w-4" /> Contactez nous

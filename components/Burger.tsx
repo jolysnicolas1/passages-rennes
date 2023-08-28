@@ -24,7 +24,7 @@ const Burger = ({ isDark }: Props) => {
     <div className="flex md:hidden">
       <button
         type="button"
-        className="-m-2.5 inline-flex items-center justify-center  p-2.5 text-gray-700"
+        className="-m-2.5 inline-flex items-center justify-center  p-2.5 bg-gray-50 border border-gray-200 rounded-md text-gray-700"
         onClick={() => setMobileMenuOpen(true)}
       >
         <span className="sr-only">Open main menu</span>
@@ -59,6 +59,7 @@ const Burger = ({ isDark }: Props) => {
               <div className="space-y-2 py-6">
                 {navigation.map(item => (
                   <a
+                    onClick={() => setMobileMenuOpen(false)}
                     key={item.name}
                     href={item.href}
                     className="-mx-3 block  py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-50"
@@ -69,7 +70,8 @@ const Burger = ({ isDark }: Props) => {
               </div>
               <div className="py-6">
                 <Link
-                  href="/contact"
+                  onClick={() => setMobileMenuOpen(false)}
+                  href="/#laTable"
                   className={buttonVariants({ variant: "outline", size: "lg" })}
                 >
                   <BellAlertIcon className="mr-2 h-4 w-4" /> Réserver une table

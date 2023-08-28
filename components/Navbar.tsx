@@ -1,12 +1,10 @@
-import { BellAlertIcon } from "@heroicons/react/24/outline"
-import Image from "next/image"
-import Link from "next/link"
+// import { BellAlertIcon } from "@heroicons/react/24/outline"
+// import Link from "next/link"
 
-import logo from "/public/logo_passages_vert.png"
 import { navigation } from "@/lib/utils"
 
 import Burger from "./Burger"
-import { buttonVariants } from "./ui/button"
+// import { buttonVariants } from "./ui/button"
 
 type Props = {
   isDark?: boolean
@@ -14,13 +12,13 @@ type Props = {
 
 const Navbar = ({ isDark }: Props) => {
   return (
-    <header className={`absolute inset-x-0 top-0 z-50  bg-transparent`}>
+    <header className={`fixed inset-x-0 top-0 z-50  bg-transparent`}>
       <nav
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="static flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex md:flex-1">
-          <a
+          {/* <a
             href="/"
             className="-m-1.5 p-1.5"
           >
@@ -32,7 +30,7 @@ const Navbar = ({ isDark }: Props) => {
               height={120}
               alt=""
             />
-          </a>
+          </a> */}
         </div>
         <Burger isDark={isDark} />
         <div
@@ -53,12 +51,12 @@ const Navbar = ({ isDark }: Props) => {
           ))}
         </div>
         <div className="hidden md:flex md:flex-1 md:justify-end">
-          <Link
+          {/*  <Link
             href="/contact"
             className={buttonVariants({ variant: "outline", size: "sm" })}
           >
             <BellAlertIcon className="mr-2 h-4 w-4" /> Réserver
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </header>

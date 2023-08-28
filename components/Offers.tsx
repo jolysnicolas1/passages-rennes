@@ -6,6 +6,7 @@ type Props = {
   title: string
   link?: React.ReactNode
   reversePosition?: boolean
+  titleId: string
 }
 
 export default function Offers({
@@ -13,6 +14,7 @@ export default function Offers({
   images,
   title,
   link,
+  titleId,
   reversePosition,
 }: Props) {
   return (
@@ -24,7 +26,10 @@ export default function Offers({
           }`}
         >
           <div>
-            <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl mb-4 font-serif">
+            <h2
+              id={titleId}
+              className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl mb-4 font-serif"
+            >
               {title}
             </h2>
             {link}
