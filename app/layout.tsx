@@ -1,95 +1,51 @@
 import "./globals.css"
 
+import { EB_Garamond } from "next/font/google"
 import localFont from "next/font/local"
 
 import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 
-const gillSans = localFont({
-  src: [
-    // pas de thin ni de extralight
-    {
-      path: "./fonts/GillSansMTPro-Light.otf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "./fonts/GillSansMTPro-LightItalic.otf",
-      weight: "300",
-      style: "italic",
-    },
-    {
-      path: "./fonts/GillSansMTPro-Book.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./fonts/GillSansMTPro-BookItalic.otf",
-      weight: "400",
-      style: "italic",
-    },
-    {
-      path: "./fonts/GillSansMTPro-Medium.otf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "./fonts/GillSansMTPro-MediumItalic.otf",
-      weight: "500",
-      style: "italic",
-    },
-    // bold correspond a semibold et heavy a bold en tailwind
-    {
-      path: "./fonts/GillSansMTPro-Bold.otf",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "./fonts/GillSansMTPro-BoldItalic.otf",
-      weight: "600",
-      style: "italic",
-    },
-    {
-      path: "./fonts/GillSansMTPro-Heavy.otf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "./fonts/GillSansMTPro-HeavyItalic.otf",
-      weight: "700",
-      style: "italic",
-    },
-    {
-      path: "./fonts/GillSansMTPro-ExtraBold.otf",
-      weight: "800",
-      style: "normal",
-    },
-    {
-      path: "./fonts/GillSansMTPro-UltraBold.otf",
-      weight: "900",
-      style: "normal",
-    },
-  ],
-  display: "swap",
-  variable: "--font-gill-sans",
+const garamond = EB_Garamond({
+  subsets: ["latin"],
+  variable: "--font-garamond",
 })
 
-const bluuNext = localFont({
+const pitch = localFont({
+  src: "./fonts/Pitch-Bold.otf",
+  variable: "--font-pitch",
+})
+
+const antiqueOlive = localFont({
   src: [
     {
-      path: "./fonts/bluunext-bolditalic-webfont.woff2",
+      path: "./fonts/AntiqueOliveStd-Roman.woff2",
+      weight: "normal",
+      style: "normal",
+    },
+    {
+      path: "./fonts/AntiqueOliveStd-Italic.woff2",
       weight: "normal",
       style: "italic",
     },
     {
-      path: "./fonts/bluunext-bold-webfont.woff2",
+      path: "./fonts/AntiqueOliveStd-Bold.woff2",
       weight: "bold",
       style: "normal",
     },
-    { path: "./fonts/bluunext-titling.woff2", weight: "900", style: "normal" },
+    {
+      path: "./fonts/AntiqueOliveStd-Black.woff2",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "./fonts/AntiqueOliveStd-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
   ],
   display: "swap",
-  variable: "--font-bluu-next",
+  variable: "--font-antique-olive",
 })
 
 const title = "Passages, gastronomie itinérante et sur-mesure"
@@ -127,7 +83,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`rounded-xl overflow-x-hidden font-sans min-h-screen ${gillSans.variable} ${bluuNext.variable}`}
+        className={`rounded-xl overflow-x-hidden font-sans min-h-screen ${garamond.variable} ${antiqueOlive.variable} ${pitch.variable}`}
       >
         <Navbar />
         {children}

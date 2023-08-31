@@ -17,8 +17,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        serif: ["var(--font-bluu-next)"],
-        sans: ["var(--font-gill-sans)"],
+        pitch: ["var(--font-pitch)"],
+        serif: ["var(--font-garamond)"],
+        sans: ["var(--font-antique-olive)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
