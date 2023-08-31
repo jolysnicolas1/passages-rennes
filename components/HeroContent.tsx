@@ -1,7 +1,7 @@
 import BellAlertIcon from "@heroicons/react/24/outline/BellAlertIcon"
 import Link from "next/link"
-import ReactCurvedText from "react-curved-text"
 
+// import ReactCurvedText from 'react-curved-text';
 import { buttonVariants } from "@/components/ui/button"
 
 export default function HeroContent() {
@@ -17,7 +17,8 @@ export default function HeroContent() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center flex flex-col justify-center items-center">
             <h1 className="uppercase font-pitch font-bold tracking-[0.085em] text-white sm:text-[8.1rem]">
-              <ReactCurvedText
+              PASSAGES
+              {/* <ReactCurvedText
                 width={600}
                 height={340}
                 cx={300}
@@ -31,14 +32,14 @@ export default function HeroContent() {
                 textPathProps={null}
                 tspanProps={null}
                 ellipseProps={null}
-                svgProps={null}
-              />
+                svgProps={null} */}
+              {/* /> */}
             </h1>
             <p className="mt-2 text-2xl font-medium leading-8 text-white">
               aux Ateliers du vent
             </p>
-            <p className="mt-6 text-2xl font-medium leading-8 text-white">
-              place Clara Zeitki Rennes
+            <p className=" text-2xl font-medium leading-8 text-white">
+              place Clara Zetkin Rennes
             </p>
 
             <div className="mt-10 flex sm:flex-row flex-col items-center justify-center gap-x-4">
