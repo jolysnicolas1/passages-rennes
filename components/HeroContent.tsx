@@ -51,7 +51,7 @@ export default function HeroContent() {
                 Ouverture début septembre
               </Link>
               {/* <Link
-                href="/#traiteur"
+                href="/#surMesure"
                 className={buttonVariants({ variant: "whiteLink", size: "xl" })}
               >
                 Vos évènements <span aria-hidden="true"> →</span>

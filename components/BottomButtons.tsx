@@ -36,21 +36,19 @@ const BottomButtons = () => {
             `}
         >
           {buttons.map(item => (
-            <div
+            <a
+              href={item.href}
               key={item.name}
               className="flex flex-col justify-center items-center"
             >
               <item.icon
-                className="h-5 w-5"
+                className="h-4 w-4"
                 aria-hidden="true"
               />
-              <a
-                href={item.href}
-                className="mt-2 text-sm font-medium leading-6 px-6"
-              >
+              <p className="mt-2 text-xs font-medium leading-6 px-6">
                 {item.name}
-              </a>
-            </div>
+              </p>
+            </a>
           ))}
         </div>
       </div>

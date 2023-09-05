@@ -37,7 +37,7 @@ export default function Testimonials() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-3xl font-serif font-semibold tracking-tight text-slate-900 sm:text-4xl pb-12">
-            On a travaillé pour eux
+            Ils nous ont fait confiance
           </h2>
           <p className="mt-2 text-3xl font-medium tracking-tight text-slate-900 sm:text-4xl"></p>
         </div>

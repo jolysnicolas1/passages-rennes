@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 type Props = {
-  features: { name: string; description: string }[]
+  features: { name: string; description: string | React.ReactNode }[]
   images: { href: string; alt: string }[]
   title: string
   link?: React.ReactNode
@@ -34,7 +34,7 @@ export default function Offers({
             </h2>
             {link}
           </div>
-          <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+          <dl className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {features.map(feature => (
               <div
                 key={feature.name}
@@ -43,7 +43,9 @@ export default function Offers({
                 <dt className="font-medium text-gray-900 text-lg">
                   {feature.name}
                 </dt>
-                <dd className="mt-2 text-sm-500">{feature.description}</dd>
+                <dd className="mt-2 text-gray-700 text-sm">
+                  {feature.description}
+                </dd>
               </div>
             ))}
           </dl>

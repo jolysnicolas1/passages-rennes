@@ -8,9 +8,9 @@ import Banner from "@/components/Banner"
 import BottomButtons from "@/components/BottomButtons"
 import Features from "@/components/Features"
 import HeroContent from "@/components/HeroContent"
+import Logo from "@/components/Logo"
 import Offers from "@/components/Offers"
 import Slider from "@/components/Slider"
-import Testimonials from "@/components/Testimonials"
 import { buttonVariants } from "@/components/ui/button"
 import { socials } from "@/lib/socials"
 
@@ -50,18 +50,62 @@ export default function Home() {
         features={[
           {
             name: "La table",
-            description:
-              "Profitez de moments magiques, et laissez-vous porter.",
+            description: (
+              <>
+                Du mardi au vendredi de 14h à 16h
+                <br />
+                <br />
+                Cuisine espiègle, locale et de saison, boissons audacieuses et
+                desserts gloutons
+              </>
+            ),
           },
           {
             name: "Le snack",
-            description:
-              "Mettez-vous à l’aise, et laissez-nous organiser une prestation gastronomique hors du commun dans un cadre familier.",
+            description: (
+              <>
+                Du mardi au vendredi de 12h à 14h.
+                <br />
+                <br />
+                Le jeudi soir, pendant les Buvette de 18h-21h
+                <br />
+                <br />
+                Et lors des événements publics :
+                <br />
+                Retrouvez-nous sur l&apos;agenda des Ateliers du Vent
+                <br />
+                <br />
+                Pas de réservation pour le Snack!{" "}
+              </>
+            ),
           },
           {
             name: "Les évenements",
-            description:
-              "Offrez-vous un moment de gourmandise avec notre offre de pâtisseries fines, viennoiseries maison et boissons chaudes, à l'heure du goûter ou au petit-déjeuner.",
+            description: (
+              <>
+                Autour d&apos;une scénographie, d&apos;un produit, d&apos;une
+                ambiance. Tenez-vous au courant de tous nos événements !<br />
+                <div className="flex space-x-2">
+                  {socials.map((item, i) => {
+                    if (i === 3 || i === 4) {
+                      return (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className="text-black hover:underline mt-2"
+                        >
+                          <span className="sr-only">{item.name}</span>
+                          <item.icon
+                            className="h-6 w-6 text-gray-700"
+                            aria-hidden="true"
+                          />
+                        </Link>
+                      )
+                    }
+                  })}
+                </div>
+              </>
+            ),
           },
         ]}
       />
@@ -73,7 +117,7 @@ export default function Home() {
           <>
             <p className="mt-6 text-base sm:text-lg leading-8 text-gray-600">
               Passages, c’est une vision de la gastronomie centrée sur le
-              dialogues des mondes, ou la gastronomie rencontre la street-food,
+              dialogues des mondes, où la gastronomie rencontre la street-food,
               la cuisine traditionnelle française puise dans des influences du
               monde entier, l’élégance épouse la convivialité, où l’on travaille
               avec autant de plaisir des plats végétariens que des viandes
@@ -95,7 +139,7 @@ export default function Home() {
 
       <Banner />
       <Offers
-        titleId="traiteur"
+        titleId="surMesure"
         reversePosition
         link={
           <Link
@@ -105,7 +149,7 @@ export default function Home() {
             <UtensilsCrossed className="mr-2 h-4 w-4" /> Contactez-nous
           </Link>
         }
-        title="Nos offres sur messure"
+        title="Nos offres sur mesure"
         images={[
           { href: "/photos/offre1.jpg", alt: "Passages Rennes - offre 1" },
           { href: "/photos/offre2.jpg", alt: "Passages Rennes - offre 2" },
@@ -138,12 +182,27 @@ export default function Home() {
             description:
               "Pour vos grands groupes et rassemblements, nous vous accompagnons en vous offrant des menus adaptés et variés",
           },
+          {
+            name: "Privatisations",
+            description: (
+              <>
+                Vous cherchez un endroit magique pour accueillir votre événement
+                ? Nous mettons nos équipes et notre lieu à votre disposition.{" "}
+                <a
+                  className="underline"
+                  href="https://form.heeds.eu/registration/10469/8afd3a9105968cd111197e9f3934a168"
+                >
+                  C&rsquo;est par ici!
+                </a>
+              </>
+            ),
+          },
         ]}
       />
 
       <Slider />
 
-      <Testimonials />
+      <Logo />
 
       <Features
         titleId="contact"
