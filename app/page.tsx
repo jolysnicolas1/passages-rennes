@@ -13,6 +13,7 @@ import Offers from "@/components/Offers"
 import Slider from "@/components/Slider"
 import { buttonVariants } from "@/components/ui/button"
 import { socials } from "@/lib/socials"
+import { reservationLink } from "@/lib/utils"
 
 export default function Home() {
   return (
@@ -21,10 +22,12 @@ export default function Home() {
       <Offers
         link={
           <Link
-            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            href={reservationLink}
             className={buttonVariants({ variant: "outline", size: "lg" })}
           >
-            <BellAlertIcon className="mr-2 h-4 w-4" /> Ouverture début septembre
+            <BellAlertIcon className="mr-2 h-4 w-4" /> Réserver
           </Link>
         }
         title="La table des Ateliers du vent"

@@ -2,6 +2,8 @@ import { BellAlertIcon } from "@heroicons/react/24/outline"
 import { Map, PhoneCall } from "lucide-react"
 import React from "react"
 
+import { reservationLink } from "@/lib/utils"
+
 const BottomButtons = () => {
   const buttons = [
     {
@@ -18,7 +20,7 @@ const BottomButtons = () => {
     },
     {
       name: "Réserver",
-      href: "#laTable",
+      href: reservationLink,
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       icon: (props: any) => <BellAlertIcon {...props} />,
     },

@@ -10,3 +10,6 @@ export const navigation = [
   { name: "Sur mesure", href: "#surMesure" },
   { name: "Contact", href: "#contact" },
 ]
+
+export const reservationLink =
+  "https://ib.guestonline.fr/instabook/bookings/lTtWuZ3"

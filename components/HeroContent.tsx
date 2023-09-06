@@ -1,9 +1,3 @@
-import BellAlertIcon from "@heroicons/react/24/outline/BellAlertIcon"
-import Link from "next/link"
-
-// import ReactCurvedText from 'react-curved-text';
-import { buttonVariants } from "@/components/ui/button"
-
 export default function HeroContent() {
   return (
     <div className="bg-gray-800 w-screen">
@@ -16,7 +10,7 @@ export default function HeroContent() {
         />
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center flex flex-col justify-center items-center">
-            <h1 className="uppercase font-pitch font-bold tracking-[0.085em] text-white sm:text-[8.1rem]">
+            <h1 className="uppercase font-pitch font-bold tracking-[0.085em] text-white text-4xl sm:text-7xl md:text-[8.1rem]">
               PASSAGES
               {/* <ReactCurvedText
                 width={600}
@@ -35,21 +29,23 @@ export default function HeroContent() {
                 svgProps={null} */}
               {/* /> */}
             </h1>
-            <p className="mt-2 text-2xl font-medium leading-8 text-white">
+            <p className="mt-2 sm:text-2xl font-medium sm:leading-8 text-white">
               aux Ateliers du vent
             </p>
-            <p className=" text-2xl font-medium leading-8 text-white">
+            <p className="sm:text-2xl font-medium sm:leading-8 text-white">
               place Clara Zetkin Rennes
             </p>
 
             <div className="mt-10 flex sm:flex-row flex-col items-center justify-center gap-x-4">
-              <Link
-                href="/contact"
+              {/* <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href={reservationLink}
                 className={buttonVariants({ variant: "outline", size: "xl" })}
               >
                 <BellAlertIcon className="mr-2 h-4 w-4 sm:h-5 sm:w-5 sm:mr-3" />{" "}
-                Ouverture début septembre
-              </Link>
+                Réserver
+              </Link> */}
               {/* <Link
                 href="/#surMesure"
                 className={buttonVariants({ variant: "whiteLink", size: "xl" })}
