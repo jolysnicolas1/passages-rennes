@@ -55,7 +55,7 @@ export default function Home() {
             name: "La table",
             description: (
               <>
-                Du mardi au vendredi de 14h à 16h
+                Du mardi au vendredi de 12h à 14h
                 <br />
                 <br />
                 Cuisine espiègle, locale et de saison, boissons audacieuses et
