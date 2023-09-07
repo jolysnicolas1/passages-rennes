@@ -6,8 +6,8 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const navigation = [
-  { name: "La table & le snack", href: "#laTable" },
-  { name: "Sur mesure", href: "#surMesure" },
+  { name: "La table & le snack", href: "#la-table" },
+  { name: "Sur mesure", href: "#sur-mesure" },
   { name: "Contact", href: "#contact" },
 ]
 

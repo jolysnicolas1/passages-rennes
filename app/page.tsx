@@ -1,5 +1,4 @@
 /* eslint-disable sonarjs/no-duplicate-string */
-"use client"
 import { BellAlertIcon } from "@heroicons/react/24/outline"
 import { UtensilsCrossed } from "lucide-react"
 import Link from "next/link"
@@ -31,7 +30,7 @@ export default function Home() {
           </Link>
         }
         title="La table des Ateliers du vent"
-        titleId="laTable"
+        titleId="la-table"
         images={[
           {
             href: "/photos/dessert.jpg",
@@ -115,7 +114,6 @@ export default function Home() {
       <Features
         reversePosition
         title="Nos valeurs"
-        titleId="nosValeurs"
         text={
           <>
             <p className="mt-6 text-base sm:text-lg leading-8 text-gray-600">
@@ -142,15 +140,15 @@ export default function Home() {
 
       <Banner />
       <Offers
-        titleId="surMesure"
+        titleId="sur-mesure"
         reversePosition
         link={
-          <Link
+          <a
             href="/#contact"
             className={buttonVariants({ variant: "outline", size: "lg" })}
           >
             <UtensilsCrossed className="mr-2 h-4 w-4" /> Contactez-nous
-          </Link>
+          </a>
         }
         title="Nos offres sur mesure"
         images={[

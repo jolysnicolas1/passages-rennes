@@ -1,5 +1,3 @@
-"use client"
-
 import { Mail, Map, PhoneCall } from "lucide-react"
 
 export const socials = [

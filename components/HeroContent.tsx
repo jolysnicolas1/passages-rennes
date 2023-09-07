@@ -1,10 +1,15 @@
+import Image from "next/image"
+
+import heroImg from "../public/photos/hero.jpg"
+
 export default function HeroContent() {
   return (
     <div className="bg-gray-800 w-screen">
       <div className="relative isolate overflow-hidden pt-14">
-        <img
-          loading="eager"
-          src="/photos/hero.jpg"
+        <Image
+          priority={true}
+          src={heroImg}
+          sizes="100vw"
           alt="Passage rennes - gastronomie sur mesure"
           className="absolute inset-0 opacity-50 -z-10 h-full w-full object-cover"
         />
@@ -47,7 +52,7 @@ export default function HeroContent() {
                 Réserver
               </Link> */}
               {/* <Link
-                href="/#surMesure"
+                href="/#sur-mesure"
                 className={buttonVariants({ variant: "whiteLink", size: "xl" })}
               >
                 Vos évènements <span aria-hidden="true"> →</span>
