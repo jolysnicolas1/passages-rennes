@@ -50,21 +50,23 @@ const antiqueOlive = localFont({
 
 const title = "Passages, gastronomie itinérante et sur-mesure"
 const desc =
-  "Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées."
-const image = "https://passages-rennes.com/cooks.jpg"
+  "Passages | Restaurant à Rennes, cuisine espiègle, locale et de saison"
+const keywords = ["Restaurant", "Rennes", "Cuisine locale", "Snack"]
+
+const image = "https://passages-rennes.com/logos/passages_logo.png"
 
 export const metadata = {
   verification: {
     google: "dagFnwii5HfTcKs0SHDaT9-kwRimu2BRU3pG-paI9QY",
   },
+  keywords: keywords,
   title: title,
   description: desc,
   openGraph: {
     images: image,
     type: "website",
     title: title,
-    description:
-      "Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées.",
+    description: desc,
     url: "https://passages-rennes.com",
   },
   twitter: {
