@@ -48,7 +48,7 @@ const antiqueOlive = localFont({
   variable: "--font-antique-olive",
 })
 
-const title = "Passages, gastronomie itinérante et sur-mesure"
+const title = "Passages - Restaurant à Rennes"
 const desc =
   "Passages | Restaurant à Rennes, cuisine espiègle, locale et de saison"
 const keywords = ["Restaurant", "Rennes", "Cuisine locale", "Snack"]
@@ -83,7 +83,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
         className={`rounded-xl overflow-x-hidden font-sans min-h-screen ${garamond.variable} ${antiqueOlive.variable} ${pitch.variable}`}
       >
