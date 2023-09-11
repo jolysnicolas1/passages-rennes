@@ -43,7 +43,7 @@ const Navbar = ({ isDark }: Props) => {
             <a
               key={item.name}
               href={item.href}
-              className="text-md font-medium leading-6 "
+              className="text-sm text- font-medium leading-6 "
             >
               {item.name}
             </a>
