@@ -63,18 +63,32 @@ export default function Home() {
             ),
           },
           {
-            name: "Le snack",
+            name: (
+              <>
+                Le snack
+                <br />
+                Sur place et à emporter
+              </>
+            ),
             description: (
               <>
                 Du mardi au vendredi de 12h à 14h.
                 <br />
                 <br />
-                Le jeudi soir, pendant les Buvette de 18h-21h
+                Le jeudi soir, pendant les Buvette de 18h à 21h
                 <br />
                 <br />
-                Et lors des événements publics :
+                Et lors des événements publics:
                 <br />
-                Retrouvez-nous sur l&apos;agenda des Ateliers du Vent
+                Retrouvez-nous sur{" "}
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                  href="https://www.lesateliersduvent.org/"
+                >
+                  l&apos;agenda des Ateliers du Vent
+                </Link>
                 <br />
                 <br />
                 Pas de réservation pour le Snack!{" "}
@@ -82,11 +96,16 @@ export default function Home() {
             ),
           },
           {
-            name: "Les évenements",
+            name: "Les événements",
             description: (
               <>
                 Autour d&apos;une scénographie, d&apos;un produit, d&apos;une
-                ambiance. Tenez-vous au courant de tous nos événements !<br />
+                ambiance.
+                <br />
+                <br />
+                Suivez-nous sur les réseaux pour vous tenir au courant de tous
+                nos événements
+                <br />
                 <div className="flex space-x-2">
                   {socials.map((item, i) => {
                     if (i === 3 || i === 4) {
@@ -118,7 +137,7 @@ export default function Home() {
           <>
             <p className="mt-6 text-base sm:text-lg leading-8 text-gray-600">
               Passages, c’est une vision de la gastronomie centrée sur le
-              dialogues des mondes, où la gastronomie rencontre la street-food,
+              dialogue des mondes, où la gastronomie rencontre la street-food,
               la cuisine traditionnelle française puise dans des influences du
               monde entier, l’élégance épouse la convivialité, où l’on travaille
               avec autant de plaisir des plats végétariens que des viandes
@@ -187,8 +206,9 @@ export default function Home() {
             name: "Privatisations",
             description: (
               <>
-                Vous cherchez un endroit magique pour accueillir votre événement
-                ? Nous mettons nos équipes et notre lieu à votre disposition.{" "}
+                Vous cherchez un endroit exceptionnel pour accueillir votre
+                événement ? Nous mettons nos équipes et notre lieu à votre
+                disposition.{" "}
                 <a
                   className="underline"
                   href="https://form.heeds.eu/registration/10469/8afd3a9105968cd111197e9f3934a168"

@@ -1,7 +1,10 @@
 import Image from "next/image"
 
 type Props = {
-  features: { name: string; description: string | React.ReactNode }[]
+  features: {
+    name: string | React.ReactNode
+    description: string | React.ReactNode
+  }[]
   images: { href: string; alt: string }[]
   title: string
   link?: React.ReactNode

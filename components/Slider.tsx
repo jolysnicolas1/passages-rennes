@@ -1,9 +1,10 @@
 "use client"
 import "swiper/css"
 import "swiper/css/pagination"
+import "swiper/css/navigation"
 
 import Image from "next/image"
-import { Pagination } from "swiper/modules"
+import { Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 
 const images = [
@@ -24,13 +25,14 @@ export default function Slider() {
         Portfolio
       </h2>
       <Swiper
-        slidesPerView={1.2}
-        scrollbar={{
-          hide: true,
-        }}
+        slidesPerView={1}
+        // scrollbar={{
+        //   hide: true,
+        // }}
+        navigation={true}
         spaceBetween={30}
         pagination={true}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]}
         className="mySwiper"
       >
         {images.map((image, i) => (

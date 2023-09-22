@@ -27,10 +27,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        test: "#FDBEE0",
-        orange: "#FF773D",
-        myGreen: "#3fa535",
-        myYellow: "#ffe596",
+        beige: "#FAF6F4",
+        red: "#c73a23",
+        olive: "#A7C88E",
+        dark: "#2F0B00",
       },
       keyframes: {
         "accordion-down": {
