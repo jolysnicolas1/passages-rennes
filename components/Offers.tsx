@@ -40,7 +40,7 @@ export default function Offers({
           <dl className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {features.map(feature => (
               <div
-                key={feature.name}
+                key={feature.name?.toString()}
                 className="border-t border-gray-200 pt-4"
               >
                 <dt className="font-medium text-gray-900 text-lg">
