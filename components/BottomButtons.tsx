@@ -1,6 +1,6 @@
 import { BellAlertIcon } from "@heroicons/react/24/outline"
 import { Map, PhoneCall } from "lucide-react"
-import React from "react"
+import Link from "next/link"
 
 import { reservationLink } from "@/lib/utils"
 
@@ -38,7 +38,9 @@ const BottomButtons = () => {
             `}
         >
           {buttons.map(item => (
-            <a
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
               href={item.href}
               key={item.name}
               className="flex flex-col justify-center items-center"
@@ -50,7 +52,7 @@ const BottomButtons = () => {
               <p className="mt-2 text-xs font-medium leading-6 px-6">
                 {item.name}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

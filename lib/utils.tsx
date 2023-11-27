@@ -12,4 +12,4 @@ export const navigation = [
 ]
 
 export const reservationLink =
-  "https://ib.guestonline.fr/instabook/bookings/lTtWuZ3"
+  "https://bookings.zenchef.com/results?rid=363456&pid=1001"
