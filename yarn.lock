@@ -19,37 +19,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arctext/react@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@arctext/react@npm:1.0.0"
-  peerDependencies:
-    react: ^17.0.2
-  checksum: 7b03bad5afa488cc1eec7be8aab08af291f234e83173b92ef991f450044870d98c3ccf483572a9a3bbac9d61013d3ad41ac738ba0b754988f2582e8c333510e9
-  languageName: node
-  linkType: hard
-
 "@babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.20.7":
   version: 7.22.11
   resolution: "@babel/runtime@npm:7.22.11"
   dependencies:
     regenerator-runtime: ^0.14.0
   checksum: a5cd6683a8fcdb8065cb1677f221e22f6c67ec8f15ad1d273b180b93ab3bd86c66da2c48f500d4e72d8d2cfa85ff4872a3f350e5aa3855630036af5da765c001
-  languageName: node
-  linkType: hard
-
-"@emotion/is-prop-valid@npm:^0.8.2":
-  version: 0.8.8
-  resolution: "@emotion/is-prop-valid@npm:0.8.8"
-  dependencies:
-    "@emotion/memoize": 0.7.4
-  checksum: bb7ec6d48c572c540e24e47cc94fc2f8dec2d6a342ae97bc9c8b6388d9b8d283862672172a1bb62d335c02662afe6291e10c71e9b8642664a8b43416cdceffac
-  languageName: node
-  linkType: hard
-
-"@emotion/memoize@npm:0.7.4":
-  version: 0.7.4
-  resolution: "@emotion/memoize@npm:0.7.4"
-  checksum: 4e3920d4ec95995657a37beb43d3f4b7d89fed6caa2b173a4c04d10482d089d5c3ea50bbc96618d918b020f26ed6e9c4026bbd45433566576c1f7b056c3271dc
   languageName: node
   linkType: hard
 
@@ -1091,15 +1066,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"circletype@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "circletype@npm:2.3.0"
-  dependencies:
-    core-js: ^2.5.6
-  checksum: 8c82800eb393b66fcfeecc01caa246d00b544f341888d8f7f44f76b5e3e885db5a45fe27c6c31eec4d2286f127d9628ed42cc809fb93ebc591c3d2ea703564d4
-  languageName: node
-  linkType: hard
-
 "class-variance-authority@npm:^0.7.0":
   version: 0.7.0
   resolution: "class-variance-authority@npm:0.7.0"
@@ -1213,13 +1179,6 @@ __metadata:
   version: 1.1.0
   resolution: "console-control-strings@npm:1.1.0"
   checksum: 8755d76787f94e6cf79ce4666f0c5519906d7f5b02d4b884cf41e11dcd759ed69c57da0670afd9236d229a46e0f9cf519db0cd829c6dca820bb5a5c3def584ed
-  languageName: node
-  linkType: hard
-
-"core-js@npm:^2.5.6":
-  version: 2.6.12
-  resolution: "core-js@npm:2.6.12"
-  checksum: 44fa9934a85f8c78d61e0c8b7b22436330471ffe59ec5076fe7f324d6e8cf7f824b14b1c81ca73608b13bdb0fef035bd820989bf059767ad6fa13123bb8bd016
   languageName: node
   linkType: hard
 
@@ -1347,13 +1306,6 @@ __metadata:
   dependencies:
     esutils: ^2.0.2
   checksum: fd7673ca77fe26cd5cba38d816bc72d641f500f1f9b25b83e8ce28827fe2da7ad583a8da26ab6af85f834138cf8dae9f69b0cd6ab925f52ddab1754db44d99ce
-  languageName: node
-  linkType: hard
-
-"dommatrix@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "dommatrix@npm:1.0.3"
-  checksum: 8ac727c1a14cf8de30a5b49a3bd6b2622a661b391fe1ac54e855eaa14a857ed86d63492150b5f70f912acc24fa3acc31d750259c47e9b5801de237624b0a319f
   languageName: node
   linkType: hard
 
@@ -2012,27 +1964,6 @@ __metadata:
   version: 4.3.5
   resolution: "fraction.js@npm:4.3.5"
   checksum: 4c4b98ce56500a78a0f886d31c7a0d60822153cc851f1f7f9ec968af1c4f7750077534f5a3ea1f8d09b0715e566fe22507a2abf7e3122bbbf21e2f7ae4127420
-  languageName: node
-  linkType: hard
-
-"framer-motion@npm:^10.12.12":
-  version: 10.16.2
-  resolution: "framer-motion@npm:10.16.2"
-  dependencies:
-    "@emotion/is-prop-valid": ^0.8.2
-    tslib: ^2.4.0
-  peerDependencies:
-    react: ^18.0.0
-    react-dom: ^18.0.0
-  dependenciesMeta:
-    "@emotion/is-prop-valid":
-      optional: true
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 341de9ed9ad26e67306d6467a17f5260ce0e8a034f936f2af22f03a7fe4087de487a8aebcbc396ab591de7fe181926d0cd6a79ec1dca6172e85f7fdf5103484f
   languageName: node
   linkType: hard
 
@@ -3562,7 +3493,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "passages-rennes@workspace:."
   dependencies:
-    "@arctext/react": ^1.0.0
     "@headlessui/react": ^1.7.14
     "@heroicons/react": ^2.0.18
     "@radix-ui/react-slot": ^1.0.2
@@ -3572,7 +3502,6 @@ __metadata:
     "@types/react-dom": 18.2.4
     "@typescript-eslint/eslint-plugin": ^5.58.0
     autoprefixer: 10.4.14
-    circletype: ^2.3.0
     class-variance-authority: ^0.7.0
     clsx: ^2.0.0
     eslint: 8.40.0
@@ -3582,7 +3511,6 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.7.1
     eslint-plugin-simple-import-sort: ^10.0.0
     eslint-plugin-sonarjs: ^0.19.0
-    framer-motion: ^10.12.12
     husky: ^8.0.3
     lint-staged: ^13.2.3
     lucide-react: ^0.263.0
@@ -3590,7 +3518,6 @@ __metadata:
     postcss: 8.4.23
     prettier: ^2.8.7
     react: latest
-    react-curved-text: ^2.0.2
     react-dom: latest
     react-icons: ^4.8.0
     swiper: ^10.1.0
@@ -3841,18 +3768,6 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: b676f8c040cdc5b12723ad2f91414d267605b26419d5c821ff03befa817ddd10e238d22b25d604920340fd73efd8ba795465a0377c4adf45a4a41e4234e42dc4
-  languageName: node
-  linkType: hard
-
-"react-curved-text@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "react-curved-text@npm:2.0.2"
-  dependencies:
-    svg-path-commander: 1.0.5
-  peerDependencies:
-    react: ">=18.0.0"
-    react-dom: ">=18.0.0"
-  checksum: 62d38e323881331c84bd32d6790d1fff0e50f2234f499677d5699ed0567b54e576c38341b7e0e82f4967a4ec1c7faa9eadfd7d5f82e234f2e170313300c1e253
   languageName: node
   linkType: hard
 
@@ -4426,15 +4341,6 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 53b1e247e68e05db7b3808b99b892bd36fb096e6fba213a06da7fab22045e97597db425c724f2bbd6c99a3c295e1e73f3e4de78592289f38431049e1277ca0ae
-  languageName: node
-  linkType: hard
-
-"svg-path-commander@npm:1.0.5":
-  version: 1.0.5
-  resolution: "svg-path-commander@npm:1.0.5"
-  dependencies:
-    dommatrix: ^1.0.3
-  checksum: 391ac17c9ff31ebbd7085170764791d2229c10187aa91a8070fb9beb71a3b4b393f0619d38d2a1b201b6d80203e565a3497e9b3ea91c53f40300880576e9f98a
   languageName: node
   linkType: hard
 

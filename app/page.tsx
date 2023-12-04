@@ -33,7 +33,7 @@ export default function Home() {
         titleId="la-table"
         images={[
           {
-            href: "/photos/dessert.jpg",
+            href: "/photos/table1.jpg",
             alt: "Passages Rennes - la table des Ateliers du Vent 2",
           },
           {
@@ -45,7 +45,7 @@ export default function Home() {
             alt: "Passages Rennes - la table des Ateliers du Vent 4",
           },
           {
-            href: "/photos/assiette.jpg",
+            href: "/photos/table4.jpg",
             alt: "Passages Rennes - la table des Ateliers du Vent 1",
           },
         ]}
@@ -152,8 +152,8 @@ export default function Home() {
           </>
         }
         image={{
-          src: "/photos/equipe2.png",
-          alt: "Passages Rennes - qui sommes nous ? ",
+          src: "/photos/valeurs.jpg",
+          alt: "Passages Rennes - qui sommes nous ?",
         }}
       />
 
@@ -172,7 +172,7 @@ export default function Home() {
         title="Nos offres sur mesure"
         images={[
           { href: "/photos/offre1.jpg", alt: "Passages Rennes - offre 1" },
-          { href: "/photos/offre2.jpg", alt: "Passages Rennes - offre 2" },
+          { href: "/photos/traiteur2.jpg", alt: "Passages Rennes - offre 2" },
           { href: "/photos/offre3.jpg", alt: "Passages Rennes - offre 3" },
           { href: "/photos/offre4.jpg", alt: "Passages Rennes - offre 4" },
         ]}
@@ -252,7 +252,7 @@ export default function Home() {
           </>
         }
         image={{
-          src: "/photos/contact.jpg",
+          src: "/photos/contact2.jpg",
           alt: "Passages Rennes - qui nous sommes ?",
         }}
       />
