@@ -54,10 +54,12 @@ const Navbar = ({ isDark }: Props) => {
             target="_blank"
             rel="noopener noreferrer"
             href={reservationLink}
-            className={buttonVariants({ variant: "outline", size: "sm" })}
+            className={
+              buttonVariants({ variant: "outline", size: "sm" }) +
+              " plausible-event-name=resa+desktop+navbar"
+            }
           >
-            <BellAlertIcon className="mr-2 h-4 w-4 plausible-event-name=resa+desktop+navbar" />{" "}
-            Réserver !
+            <BellAlertIcon className="mr-2 h-4 w-4" /> Réserver
           </a>
         </div>
       </nav>
