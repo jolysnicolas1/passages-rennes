@@ -24,7 +24,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href={reservationLink}
-            className={buttonVariants({ variant: "outline", size: "lg" })}
+            className={
+              buttonVariants({ variant: "outline", size: "lg" }) +
+              " plausible-event-name=resa+desktop+table"
+            }
           >
             <BellAlertIcon className="mr-2 h-4 w-4" /> Réserver
           </Link>

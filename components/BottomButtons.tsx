@@ -23,6 +23,7 @@ const BottomButtons = () => {
       href: reservationLink,
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       icon: (props: any) => <BellAlertIcon {...props} />,
+      className: "plausible-event-name=resa+mobile+bottom",
     },
   ]
 
@@ -43,7 +44,9 @@ const BottomButtons = () => {
               rel="noopener noreferrer"
               href={item.href}
               key={item.name}
-              className="flex flex-col justify-center items-center"
+              className={`flex flex-col justify-center items-center ${
+                item.className ? item.className : ""
+              }`}
             >
               <item.icon
                 className="h-4 w-4"
