@@ -84,6 +84,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      <head>
+        <script
+          defer
+          data-domain="passages-rennes.com"
+          src="https://plausible.io/js/script.tagged-events.js"
+        ></script>
+      </head>
       <body
         className={`rounded-xl overflow-x-hidden font-sans min-h-screen ${garamond.variable} ${antiqueOlive.variable} ${pitch.variable}`}
       >
