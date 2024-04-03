@@ -78,7 +78,7 @@ export default function Home() {
                 Du mardi au vendredi de 12h à 14h.
                 <br />
                 <br />
-                Le jeudi soir, pendant les Buvette de 18h à 21h
+                Les jeudi et vendredi soir, de 19h à 21h30
                 <br />
                 <br />
                 Et lors des événements publics:
