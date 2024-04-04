@@ -1,10 +1,9 @@
-// import { BellAlertIcon } from "@heroicons/react/24/outline"
-// import Link from "next/link"
+import { BellAlertIcon } from "@heroicons/react/24/outline"
 
-import { navigation } from "@/lib/utils"
+import { navigation, reservationLink } from "@/lib/utils"
 
 import Burger from "./Burger"
-// import { buttonVariants } from "./ui/button"
+import { buttonVariants } from "./ui/button"
 
 type Props = {
   isDark?: boolean
@@ -44,19 +43,24 @@ const Navbar = ({ isDark }: Props) => {
             <a
               key={item.name}
               href={item.href}
-              className="text-md font-medium leading-6 "
+              className="text-sm text- font-medium leading-6 "
             >
               {item.name}
             </a>
           ))}
         </div>
         <div className="hidden md:flex md:flex-1 md:justify-end">
-          {/*  <Link
-            href="/contact"
-            className={buttonVariants({ variant: "outline", size: "sm" })}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={reservationLink}
+            className={
+              buttonVariants({ variant: "outline", size: "sm" }) +
+              " plausible-event-name=resa+desktop+navbar"
+            }
           >
             <BellAlertIcon className="mr-2 h-4 w-4" /> Réserver
-          </Link> */}
+          </a>
         </div>
       </nav>
     </header>

@@ -1,5 +1,4 @@
-import BellAlertIcon from "@heroicons/react/24/outline/BellAlertIcon"
-import Link from "next/link"
+import Image from "next/image"
 
 // import ReactCurvedText from 'react-curved-text';
 import { buttonVariants } from "@/components/ui/button"

@@ -5,7 +5,7 @@ type Props = {
   text: React.ReactNode
   image: { src: string; alt: string }
   reversePosition?: boolean
-  titleId: string
+  titleId?: string
 }
 
 export default function Features({
@@ -41,7 +41,7 @@ export default function Features({
               objectFit="cover"
               src={image.src}
               alt={image.alt}
-              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              className="hidden lg:block max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
             />
           </div>
         </div>

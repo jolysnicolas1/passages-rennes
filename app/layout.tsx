@@ -48,23 +48,25 @@ const antiqueOlive = localFont({
   variable: "--font-antique-olive",
 })
 
-const title = "Passages, gastronomie itinérante et sur-mesure"
+const title = "Passages - Restaurant à Rennes"
 const desc =
-  "Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées."
-const image = "https://passages-rennes.com/cooks.jpg"
+  "Passages | Restaurant à Rennes, cuisine espiègle, locale et de saison"
+const keywords = ["Restaurant", "Rennes", "Cuisine locale", "Snack"]
+
+const image = "https://passages-rennes.com/logos/passages_logo.png"
 
 export const metadata = {
   verification: {
     google: "dagFnwii5HfTcKs0SHDaT9-kwRimu2BRU3pG-paI9QY",
   },
+  keywords: keywords,
   title: title,
   description: desc,
   openGraph: {
     images: image,
     type: "website",
     title: title,
-    description:
-      "Notre équipe de passionnés, basée sur Rennes, vous accompagne dans l’élaboration de vos évènements en proposant des solutions de restauration personnalisées.",
+    description: desc,
     url: "https://passages-rennes.com",
   },
   twitter: {
@@ -81,7 +83,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
+      <head>
+        <script
+          defer
+          data-domain="passages-rennes.com"
+          src="https://plausible.io/js/script.tagged-events.js"
+        ></script>
+      </head>
       <body
         className={`rounded-xl overflow-x-hidden font-sans min-h-screen ${garamond.variable} ${antiqueOlive.variable} ${pitch.variable}`}
       >
