@@ -1,5 +1,3 @@
-"use client"
-
 import { Mail, Map, PhoneCall } from "lucide-react"
 
 export const socials = [
@@ -57,6 +55,7 @@ export const socials = [
       </svg>
     ),
   },
+
   // {
   //   name: 'Twitter',
   //   href: '#',

@@ -9,7 +9,7 @@ import {
 import Link from "next/link"
 import { useState } from "react"
 
-import { navigation } from "@/lib/utils"
+import { navigation, reservationLink } from "@/lib/utils"
 
 import { buttonVariants } from "./ui/button"
 
@@ -71,8 +71,13 @@ const Burger = ({ isDark }: Props) => {
               <div className="py-6">
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
-                  href="/#laTable"
-                  className={buttonVariants({ variant: "outline", size: "lg" })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={reservationLink}
+                  className={
+                    buttonVariants({ variant: "outline", size: "lg" }) +
+                    " plausible-event-name=resa+mobile+menu"
+                  }
                 >
                   <BellAlertIcon className="mr-2 h-4 w-4" /> Réserver une table
                 </Link>

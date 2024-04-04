@@ -1,11 +1,10 @@
 "use client"
-
-// Import Swiper styles
 import "swiper/css"
 import "swiper/css/pagination"
+import "swiper/css/navigation"
 
 import Image from "next/image"
-import { Pagination } from "swiper/modules"
+import { Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 
 const images = [
@@ -22,20 +21,18 @@ const images = [
 export default function Slider() {
   return (
     <div className="bg-transparent max-w-7xl mx-auto">
-      <h2
-        id="portfolio"
-        className="mt-2 text-center pb-16 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-serif"
-      >
+      <h2 className="mt-2 text-center pb-16 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-serif">
         Portfolio
       </h2>
       <Swiper
-        slidesPerView={1.2}
-        scrollbar={{
-          hide: true,
-        }}
+        slidesPerView={1}
+        // scrollbar={{
+        //   hide: true,
+        // }}
+        navigation={true}
         spaceBetween={30}
         pagination={true}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]}
         className="mySwiper"
       >
         {images.map((image, i) => (

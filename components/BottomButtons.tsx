@@ -1,6 +1,8 @@
 import { BellAlertIcon } from "@heroicons/react/24/outline"
 import { Map, PhoneCall } from "lucide-react"
-import React from "react"
+import Link from "next/link"
+
+import { reservationLink } from "@/lib/utils"
 
 const BottomButtons = () => {
   const buttons = [
@@ -18,9 +20,10 @@ const BottomButtons = () => {
     },
     {
       name: "Réserver",
-      href: "#laTable",
+      href: reservationLink,
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       icon: (props: any) => <BellAlertIcon {...props} />,
+      className: "plausible-event-name=resa+mobile+bottom",
     },
   ]
 
@@ -36,21 +39,23 @@ const BottomButtons = () => {
             `}
         >
           {buttons.map(item => (
-            <div
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href={item.href}
               key={item.name}
-              className="flex flex-col justify-center items-center"
+              className={`flex flex-col justify-center items-center ${
+                item.className ? item.className : ""
+              }`}
             >
               <item.icon
-                className="h-5 w-5"
+                className="h-4 w-4"
                 aria-hidden="true"
               />
-              <a
-                href={item.href}
-                className="mt-2 text-sm font-medium leading-6 px-6"
-              >
+              <p className="mt-2 text-xs font-medium leading-6 px-6">
                 {item.name}
-              </a>
-            </div>
+              </p>
+            </Link>
           ))}
         </div>
       </div>

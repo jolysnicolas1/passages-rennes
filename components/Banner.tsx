@@ -1,6 +1,4 @@
-"use client"
 import { HandRaisedIcon } from "@heroicons/react/24/outline"
-import Link from "next/link"
 
 import { buttonVariants } from "./ui/button"
 
@@ -17,12 +15,12 @@ export default function Banner() {
             commodo do ea.
           </p> */}
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link
+            <a
               href="/#contact"
               className={buttonVariants({ variant: "outline", size: "xl" })}
             >
               <HandRaisedIcon className="mr-2 h-4 w-4" /> Contactez nous
-            </Link>
+            </a>
           </div>
         </div>
       </div>
