@@ -14,8 +14,8 @@ export const socials = [
     icon: (props: any) => <Mail {...props} />,
   },
   {
-    name: "06.51.96.14.94",
-    href: "tel:0651961494",
+    name: "Réservation : 07.83.10.18.81 \b | \b Traiteur : 06.51.96.14.94",
+    href: "tel:0783101881",
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     icon: (props: any) => <PhoneCall {...props} />,
   },
