@@ -57,7 +57,7 @@ export default function Home() {
             name: "La table",
             description: (
               <>
-                Du mardi au vendredi de 12h à 14h
+                Du lundi au vendredi de 12h à 14h
                 <br />
                 <br />
                 Cuisine espiègle, locale et de saison, boissons audacieuses et
@@ -75,10 +75,10 @@ export default function Home() {
             ),
             description: (
               <>
-                Du mardi au vendredi de 12h à 14h.
+                Du lundi au vendredi de 12h à 14h.
                 <br />
                 <br />
-                Les jeudi et vendredi soir, de 19h à 21h30
+                Le jeudi soir, de 19h à 21h30
                 <br />
                 <br />
                 Et lors des événements publics:
