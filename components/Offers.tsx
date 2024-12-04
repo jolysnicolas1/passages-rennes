@@ -57,15 +57,14 @@ export default function Offers({
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           {images.map(img => (
             <div
-              key="img"
+              key={img.alt}
               className="h-[200px] lg:h-[290px] relative"
             >
               <Image
                 fill
-                objectFit="cover"
                 src={img.href}
                 alt={img.alt}
-                className="self-end rounded-md bg-gray-100"
+                className="self-end object-cover rounded-md bg-gray-100"
               />
             </div>
           ))}

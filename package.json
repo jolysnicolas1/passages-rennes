@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,20 +14,21 @@
     "@heroicons/react": "^2.0.18",
     "@radix-ui/react-slot": "^1.0.2",
     "@types/node": "20.1.1",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "autoprefixer": "10.4.14",
     "circletype": "^2.3.0",
     "class-variance-authority": "^0.7.0",
-    "clsx": "^2.0.0",
+    "clsx": "^2.1.1",
     "eslint": "8.40.0",
-    "eslint-config-next": "latest",
+    "eslint-config-next": "15.0.3",
+    "framer-motion": "^11.13.1",
     "lucide-react": "^0.263.0",
-    "next": "latest",
+    "next": "15.0.3",
     "postcss": "8.4.23",
-    "react": "latest",
+    "react": "19.0.0-rc-66855b96-20241106",
     "react-curved-text": "^2.0.2",
-    "react-dom": "latest",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
     "react-icons": "^4.8.0",
     "swiper": "^10.1.0",
     "tailwind-merge": "^1.14.0",
@@ -50,5 +51,9 @@
   "lint-staged": {
     "*.{js,css,md,ts,tsx,json}": "prettier --write",
     "*.{js,jsx,ts,tsx}": "eslint --fix"
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
   }
 }

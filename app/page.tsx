@@ -8,6 +8,7 @@ import BottomButtons from "@/components/BottomButtons"
 import Features from "@/components/Features"
 import HeroContent from "@/components/HeroContent"
 import Logo from "@/components/Logo"
+import News from "@/components/News"
 import Offers from "@/components/Offers"
 import Slider from "@/components/Slider"
 import { buttonVariants } from "@/components/ui/button"
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-gray-50 space-y-12 text-lime-950 rounded-md">
       <HeroContent />
+      <News />
       <Offers
         link={
           <Link
@@ -165,12 +167,12 @@ export default function Home() {
         titleId="sur-mesure"
         reversePosition
         link={
-          <a
+          <Link
             href="/#contact"
             className={buttonVariants({ variant: "outline", size: "lg" })}
           >
             <UtensilsCrossed className="mr-2 h-4 w-4" /> Contactez-nous
-          </a>
+          </Link>
         }
         title="Nos offres sur mesure"
         images={[
@@ -243,12 +245,12 @@ export default function Home() {
                     className="h-6 w-6"
                     aria-hidden="true"
                   />
-                  <a
+                  <Link
                     href={social.href}
                     className="text-sm sm:text-base font-semibold hover:underline leading-7 text-slate-900"
                   >
                     {social.name}
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>

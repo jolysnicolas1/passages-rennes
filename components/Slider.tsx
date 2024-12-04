@@ -36,13 +36,12 @@ export default function Slider() {
         className="mySwiper"
       >
         {images.map((image, i) => (
-          <SwiperSlide key={image}>
+          <SwiperSlide key={image + i}>
             <div className="rounded-md h-full shrink-0 drop-shadow-2xl relative">
               <Image
-                // className="rounded-md object-contain h-full"
+                className="object-cover"
                 src={image}
                 alt={`Passages - Portfolio ${i}`}
-                objectFit="cover"
                 fill
               />
             </div>
