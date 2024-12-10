@@ -23,15 +23,14 @@ const newsItems = [
   },
 ]
 
-const bgColors = [
-  "bg-red",
-  "bg-teal-900",
-  "bg-blue-900",
-  "bg-pink-800",
-  "bg-amber-900",
-]
-
 export default function News() {
+  const bgColors = [
+    "bg-red",
+    "bg-teal-900",
+    "bg-blue-900",
+    "bg-pink-800",
+    "bg-amber-900",
+  ]
   return (
     <section className="py-16">
       <div className="mx-auto px-4">

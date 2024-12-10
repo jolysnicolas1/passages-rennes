@@ -1,11 +1,15 @@
+import { KeyTextField, RichTextField } from "@prismicio/client"
+import { PrismicRichText } from "@prismicio/react"
 import Image from "next/image"
+import React from "react"
 
 type Props = {
-  title: string
-  text: React.ReactNode
-  image: { src: string; alt: string }
+  title: KeyTextField
+  text?: RichTextField
+  image: { src: string | null | undefined; alt: string }
   reversePosition?: boolean
   titleId?: string
+  iconsAndTexts?: React.ReactNode
 }
 
 export default function Features({
@@ -14,6 +18,7 @@ export default function Features({
   image,
   titleId,
   reversePosition,
+  iconsAndTexts,
 }: Props) {
   return (
     <div className="overflow-hidden bg-transparent py-24 sm:py-16 w-screen">
@@ -32,16 +37,23 @@ export default function Features({
               >
                 {title}
               </h2>
-              {text}
+              <div className="flex flex-col gap-2 mt-6 text-base sm:text-lg leading-8 text-gray-600">
+                {text && <PrismicRichText field={text} />}
+              </div>
+              <div className="icons-and-texts text-gray-600">
+                {iconsAndTexts}
+              </div>
             </div>
           </div>
           <div className="relative">
-            <Image
-              fill
-              src={image.src}
-              alt={image.alt}
-              className="hidden object-cover lg:block max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-            />
+            {image.src && (
+              <Image
+                fill
+                src={image.src}
+                alt={image.alt}
+                className="hidden object-cover lg:block max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              />
+            )}
           </div>
         </div>
       </div>

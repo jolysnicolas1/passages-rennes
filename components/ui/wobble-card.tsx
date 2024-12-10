@@ -25,6 +25,8 @@ export const WobbleCard = ({
   }
   return (
     <motion.section
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => {
@@ -56,6 +58,8 @@ export const WobbleCard = ({
               : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
             transition: "transform 0.1s ease-out",
           }}
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           className={cn("h-full px-6 sm:px-10 py-10", className)}
         >
           {/* <Noise /> */}

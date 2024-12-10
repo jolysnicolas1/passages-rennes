@@ -1,0 +1,69 @@
+{
+  "id": "news_section",
+  "type": "SharedSlice",
+  "name": "NewsSection",
+  "description": "NewsSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": "Actualités"
+          }
+        },
+        "body": {
+          "type": "Group",
+          "config": {
+            "label": "body",
+            "repeat": true,
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "image",
+                  "constraint": {
+                    "width": null,
+                    "height": null
+                  },
+                  "thumbnails": []
+                }
+              },
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "title",
+                  "placeholder": "titre de l'actu"
+                }
+              },
+              "content": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "content",
+                  "placeholder": "contenu de l'actu",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+                }
+              },
+              "expiration_date": {
+                "type": "Date",
+                "config": {
+                  "label": "expiration date",
+                  "placeholder": "date d'expiration"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

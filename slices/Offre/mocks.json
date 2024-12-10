@@ -1,0 +1,162 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title": {
+        "__TYPE__": "FieldContent",
+        "value": "citizen",
+        "type": "Text"
+      },
+      "detail": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "subtitle",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "compass",
+                  "type": "Text"
+                }
+              ],
+              [
+                "content",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Pariatur nisi reprehenderit irure occaecat elit veniam tempor fugiat ullamco excepteur ut ex. Veniam eiusmod veniam aute deserunt esse ullamco esse enim labore esse minim laborum laborum voluptate. Fugiat ipsum est aute quis."
+                      }
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "image1": {
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+          "width": 3199,
+          "height": 3199
+        },
+        "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?rect=0%2C0%2C3199%2C3199&w=290&h=290",
+        "width": 290,
+        "height": 290,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
+        "thumbnails": {}
+      },
+      "image2": {
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+          "width": 5616,
+          "height": 3744
+        },
+        "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?rect=936%2C0%2C3744%2C3744&w=290&h=290",
+        "width": 290,
+        "height": 290,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 936,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
+        "thumbnails": {}
+      },
+      "image3": {
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef",
+          "width": 4000,
+          "height": 6000
+        },
+        "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?rect=0%2C1000%2C4000%2C4000&w=290&h=290",
+        "width": 290,
+        "height": 290,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 1000
+          },
+          "background": "transparent"
+        },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
+        "thumbnails": {}
+      },
+      "image4": {
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+          "width": 3168,
+          "height": 4752
+        },
+        "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?rect=0%2C792%2C3168%2C3168&w=290&h=290",
+        "width": 290,
+        "height": 290,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 792
+          },
+          "background": "transparent"
+        },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
+        "thumbnails": {}
+      },
+      "button_text": {
+        "__TYPE__": "FieldContent",
+        "value": "character",
+        "type": "Text"
+      },
+      "button_icon": {
+        "__TYPE__": "FieldContent",
+        "value": "bell",
+        "type": "Select"
+      },
+      "button_link": {
+        "__TYPE__": "FieldContent",
+        "value": "forth",
+        "type": "Text"
+      },
+      "title_id": {
+        "__TYPE__": "FieldContent",
+        "value": "strong",
+        "type": "Text"
+      },
+      "reverse_position": {
+        "__TYPE__": "BooleanContent",
+        "value": false
+      }
+    },
+    "items": []
+  }
+]

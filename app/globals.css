@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  dd a {
+    @apply underline hover:text-black;
+  }
+
+  .icons-and-texts a {
+    @apply underline hover:text-black;
+  }
+}
+
 .swiper {
   @apply w-[1280px] max-w-[95vw];
   height: 500px;

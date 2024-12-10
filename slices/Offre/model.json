@@ -1,0 +1,133 @@
+{
+  "id": "offre",
+  "type": "SharedSlice",
+  "name": "Offre",
+  "description": "Offre",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": "le titre de l'offre"
+          }
+        },
+        "detail": {
+          "type": "Group",
+          "config": {
+            "label": "detail",
+            "repeat": true,
+            "fields": {
+              "subtitle": {
+                "type": "Text",
+                "config": {
+                  "label": "subtitle",
+                  "placeholder": "soutitre"
+                }
+              },
+              "content": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "content",
+                  "placeholder": "contenu de l'offre",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,strong,em,hyperlink,list-item"
+                }
+              }
+            }
+          }
+        },
+        "image1": {
+          "type": "Image",
+          "config": {
+            "label": "image 1",
+            "constraint": {
+              "width": 290,
+              "height": 290
+            },
+            "thumbnails": []
+          }
+        },
+        "image2": {
+          "type": "Image",
+          "config": {
+            "label": "image2",
+            "constraint": {
+              "width": 290,
+              "height": 290
+            },
+            "thumbnails": []
+          }
+        },
+        "image3": {
+          "type": "Image",
+          "config": {
+            "label": "image3",
+            "constraint": {
+              "width": 290,
+              "height": 290
+            },
+            "thumbnails": []
+          }
+        },
+        "image4": {
+          "type": "Image",
+          "config": {
+            "label": "image4",
+            "constraint": {
+              "width": 290,
+              "height": 290
+            },
+            "thumbnails": []
+          }
+        },
+        "button_text": {
+          "type": "Text",
+          "config": {
+            "label": "button text",
+            "placeholder": "text du bouton"
+          }
+        },
+        "button_icon": {
+          "type": "Select",
+          "config": {
+            "label": "button icon",
+            "placeholder": "l'icone du bouton",
+            "options": ["none", "bell", "hand", "fork+knife"]
+          }
+        },
+        "button_link": {
+          "type": "Text",
+          "config": {
+            "label": "button link",
+            "placeholder": "lien du bouton"
+          }
+        },
+        "title_id": {
+          "type": "Text",
+          "config": {
+            "label": "title id",
+            "placeholder": "clé pour la navigation dans la page"
+          }
+        },
+        "reverse_position": {
+          "type": "Boolean",
+          "config": {
+            "label": "reverse position",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

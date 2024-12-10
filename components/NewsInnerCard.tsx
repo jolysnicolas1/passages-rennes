@@ -1,4 +1,6 @@
 "use client"
+import { KeyTextField, RichTextField } from "@prismicio/client"
+import { PrismicRichText } from "@prismicio/react"
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 
@@ -9,9 +11,9 @@ export default function NewsInnerCard({
   content,
   imageUrl,
 }: {
-  title: string
-  content: string
-  imageUrl?: string
+  title: string | KeyTextField
+  content: string | RichTextField
+  imageUrl: string | null | undefined
 }) {
   const [isExpanded, setIsExpanded] = useState(false)
   const [showButton, setShowButton] = useState(false)
@@ -28,11 +30,11 @@ export default function NewsInnerCard({
   return (
     <div className="flex flex-col h-full">
       {imageUrl && (
-        <div className="aspect-video relative h-64 w-full pb-4 round">
+        <div className="aspect-video relative h-32 xs:h-48 w-full pb-4 round">
           <Image
             fill
             src={imageUrl}
-            alt={title}
+            alt={title as string}
             className="object-cover pb-4 rounded-md"
           />
         </div>
@@ -43,11 +45,15 @@ export default function NewsInnerCard({
         </h3>
         <p
           ref={contentRef}
-          className={` mt-4 text-base/6 text-neutral-200 overflow-hidden transition-all duration-300 ${
+          className={` mt-4 text-sm xs:text-base text-neutral-200 overflow-hidden transition-all duration-300 ${
             isExpanded ? "" : "sm:line-clamp-4"
           }`}
         >
-          {content}
+          {typeof content !== "string" ? (
+            <PrismicRichText field={content} />
+          ) : (
+            content
+          )}
         </p>
       </div>
       {showButton && (

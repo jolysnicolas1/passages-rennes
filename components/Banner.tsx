@@ -1,26 +1,25 @@
-import { HandRaisedIcon } from "@heroicons/react/24/outline"
+import { KeyTextField } from "@prismicio/client"
 
-import { buttonVariants } from "./ui/button"
-
-export default function Banner() {
+export function Banner({
+  punchline = "Un devis, une demande, un événement ?",
+  button,
+}: {
+  punchline: KeyTextField
+  button: React.ReactNode
+}) {
   return (
     <div className="relative isolate overflow-hidden bg-slate-950 w-screen">
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-slate-50 sm:text-4xl">
-            Un devis, une demande, un événement ?
+            {punchline}
           </h2>
           {/* <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
             Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur
             commodo do ea.
           </p> */}
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="/#contact"
-              className={buttonVariants({ variant: "outline", size: "xl" })}
-            >
-              <HandRaisedIcon className="mr-2 h-4 w-4" /> Contactez nous
-            </a>
+            {button}
           </div>
         </div>
       </div>
