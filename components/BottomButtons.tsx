@@ -28,15 +28,14 @@ const BottomButtons = () => {
   ]
 
   return (
-    <div className={`fixed md:hidden -bottom-3 z-50  bg-transparent`}>
+    <div className="fixed md:hidden -bottom-3 z-50 bg-transparent">
       <div
         className="static flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
         <div
-          className={`font-sans px-5 pt-4 pb-3 flex
-            bg-white sm:justify-between sm:w-[75vw] rounded-full text-black border border-gray-200 shadow
-            `}
+          className="font-sans px-5 pt-4 pb-3 flex
+            bg-white sm:justify-between sm:w-[75vw] rounded-full text-black border border-gray-200 shadow"
         >
           {buttons.map(item => (
             <Link

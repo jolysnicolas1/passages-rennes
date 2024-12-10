@@ -59,9 +59,11 @@ export const metadata = {
   verification: {
     google: "dagFnwii5HfTcKs0SHDaT9-kwRimu2BRU3pG-paI9QY",
   },
+
   keywords: keywords,
   title: title,
   description: desc,
+
   openGraph: {
     images: image,
     type: "website",
@@ -69,6 +71,7 @@ export const metadata = {
     description: desc,
     url: "https://passages-rennes.com",
   },
+
   twitter: {
     card: "summary_large_image",
     title: title,

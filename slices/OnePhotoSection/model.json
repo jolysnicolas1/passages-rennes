@@ -1,0 +1,85 @@
+{
+  "id": "one_photo_section",
+  "type": "SharedSlice",
+  "name": "OnePhotoSection",
+  "description": "OnePhotoSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": "Le titre de la section"
+          }
+        },
+        "content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "content",
+            "placeholder": "Le texte",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "icon_and_text": {
+          "type": "Group",
+          "config": {
+            "label": "icon and text",
+            "repeat": true,
+            "fields": {
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "text",
+                  "placeholder": "le text à côté de l'icon",
+                  "allowTargetBlank": true,
+                  "multi": "strong,em,hyperlink,paragraph,list-item,o-list-item"
+                }
+              },
+              "icon": {
+                "type": "Select",
+                "config": {
+                  "label": "icon",
+                  "placeholder": "l'icone",
+                  "options": ["map", "mail", "phone", "facebook", "instagram"]
+                }
+              }
+            }
+          }
+        },
+        "reverse_position": {
+          "type": "Boolean",
+          "config": {
+            "label": "reverse position",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "title_id": {
+          "type": "Text",
+          "config": {
+            "label": "title_id",
+            "placeholder": "le lien de navigation interne"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

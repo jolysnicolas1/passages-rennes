@@ -11,11 +11,12 @@ module.exports = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
     extend: {
+      screens: {
+        xs: "420px",
+        "2xl": "1400px",
+      },
       fontFamily: {
         pitch: ["var(--font-pitch)"],
         serif: ["var(--font-garamond)"],

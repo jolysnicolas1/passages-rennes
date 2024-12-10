@@ -1,0 +1,48 @@
+{
+  "id": "banner",
+  "type": "SharedSlice",
+  "name": "Banner",
+  "description": "Banner",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "punchline": {
+          "type": "Text",
+          "config": {
+            "label": "punchline",
+            "placeholder": "la punchline"
+          }
+        },
+        "button_text": {
+          "type": "Text",
+          "config": {
+            "label": "button text",
+            "placeholder": "le texte du bouton"
+          }
+        },
+        "button_link": {
+          "type": "Text",
+          "config": {
+            "label": "button link",
+            "placeholder": "le lien du bouton"
+          }
+        },
+        "button_icon": {
+          "type": "Select",
+          "config": {
+            "label": "button icon",
+            "placeholder": "l'icone du bouton",
+            "options": ["none", "bell", "hand", "fork+knife"]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

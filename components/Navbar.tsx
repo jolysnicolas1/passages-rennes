@@ -1,4 +1,5 @@
 import { BellAlertIcon } from "@heroicons/react/24/outline"
+import Link from "next/link"
 
 import { navigation, reservationLink } from "@/lib/utils"
 
@@ -40,13 +41,13 @@ const Navbar = ({ isDark }: Props) => {
           }`}
         >
           {navigation.map(item => (
-            <a
+            <Link
               key={item.name}
               href={item.href}
               className="text-sm text- font-medium leading-6 "
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="hidden md:flex md:flex-1 md:justify-end">

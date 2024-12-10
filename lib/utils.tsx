@@ -5,6 +5,14 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+export const bgColors = [
+  "bg-red",
+  "bg-teal-900",
+  "bg-blue-900",
+  "bg-pink-800",
+  "bg-amber-900",
+]
+
 export const navigation = [
   { name: "La table & le snack", href: "#la-table" },
   { name: "Sur mesure", href: "#sur-mesure" },

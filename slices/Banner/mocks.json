@@ -1,0 +1,29 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "punchline": {
+        "__TYPE__": "FieldContent",
+        "value": "human",
+        "type": "Text"
+      },
+      "button_text": {
+        "__TYPE__": "FieldContent",
+        "value": "arrow",
+        "type": "Text"
+      },
+      "button_link": {
+        "__TYPE__": "FieldContent",
+        "value": "little",
+        "type": "Text"
+      },
+      "button_icon": {
+        "__TYPE__": "FieldContent",
+        "value": "none",
+        "type": "Select"
+      }
+    },
+    "items": []
+  }
+]

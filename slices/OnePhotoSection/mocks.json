@@ -1,0 +1,89 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "image": {
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9",
+          "width": 4752,
+          "height": 3168
+        },
+        "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9",
+        "width": 4752,
+        "height": 3168,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
+        "thumbnails": {}
+      },
+      "title": {
+        "__TYPE__": "FieldContent",
+        "value": "rate",
+        "type": "Text"
+      },
+      "content": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Sunt laboris ullamco veniam in sint laboris dolore laborum cupidatat commodo exercitation. Velit amet quis ullamco occaecat veniam duis labore eu voluptate exercitation nulla tempor. Enim in id eiusmod est nisi."
+            }
+          }
+        ]
+      },
+      "icon_and_text": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "text",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Eu anim nulla nisi anim deserunt cillum dolore proident magna id aliquip non ea et non."
+                      }
+                    }
+                  ]
+                }
+              ],
+              [
+                "icon",
+                {
+                  "__TYPE__": "FieldContent",
+                  "value": "instagram",
+                  "type": "Select"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "reverse_position": {
+        "__TYPE__": "BooleanContent",
+        "value": true
+      },
+      "title_id": {
+        "__TYPE__": "FieldContent",
+        "value": "myself",
+        "type": "Text"
+      }
+    },
+    "items": []
+  }
+]
