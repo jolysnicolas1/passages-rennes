@@ -18,6 +18,7 @@ const NewsSection = ({ slice }: NewsSectionProps): JSX.Element => {
   const notExpiredNews = slice.primary.body.filter(item =>
     item.expiration_date ? new Date(item.expiration_date) > new Date() : false
   )
+
   return (
     <>
       {notExpiredNews.length > 0 && (

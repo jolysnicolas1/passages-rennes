@@ -4,6 +4,8 @@ import { Metadata } from "next"
 import { createClient } from "@/prismicio"
 import { components } from "@/slices"
 
+export const revalidate = 60
+
 export default async function Home() {
   const client = createClient()
   const page = await client.getSingle("homepage")
